@@ -4,29 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DesignKaro Studio | Creative Design & Digital Marketing</title>
+<title>DesignKaro Studio | Graphic Design & Digital Marketing</title>
 
-<meta name="description" content="DesignKaro Studio by Raman — Graphic Design, Branding, Digital Marketing, SEO and Web Development.">
+<meta name="description"
+content="DesignKaro Studio provides graphic design, digital marketing, SEO, GMB and web development services.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
-    --cream:#fffaf5;
-    --peach:#ffd9c7;
-    --pink:#f6b9d8;
-    --lavender:#d9c7ff;
-    --yellow:#ffe99a;
-    --mint:#bdeee2;
-    --purple:#6740b8;
-    --purple-dark:#34205f;
-    --text:#272238;
-    --muted:#716b7d;
+    --bg:#fbfaf7;
     --white:#ffffff;
+    --black:#17131d;
+    --text:#19171c;
+    --muted:#706a75;
+    --line:#e8e3dd;
+    --purple:#5b2a86;
+    --purple-light:#f0e8f6;
 }
 
 *{
@@ -41,19 +38,14 @@ html{
 
 body{
     font-family:"DM Sans",sans-serif;
-    background:var(--cream);
+    background:var(--bg);
     color:var(--text);
-    overflow-x:hidden;
+    line-height:1.6;
 }
 
 a{
     text-decoration:none;
     color:inherit;
-}
-
-img{
-    max-width:100%;
-    display:block;
 }
 
 .container{
@@ -68,546 +60,302 @@ nav{
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
-    background:rgba(255,250,245,.86);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(103,64,184,.08);
+    z-index:100;
+    background:rgba(251,250,247,.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--line);
 }
 
 .nav{
-    height:78px;
+    height:82px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
-.brand{
+.logo{
+    width:175px;
+    height:auto;
+    display:block;
+}
+
+.nav-links{
     display:flex;
     align-items:center;
-    gap:12px;
-    font-weight:700;
+    gap:28px;
 }
 
-.brand img{
-    width:170px;
-    height:autopx;
-    object-fit:contain;
-    border-radius:10px;
-    dislpay:block;
-}
-
-.brand span{
-    font-size:13px;
-    letter-spacing:.11em;
-}
-
-.links{
-    display:flex;
-    align-items:center;
-    gap:29px;
+.nav-links a{
     font-size:13px;
     font-weight:600;
+    transition:.2s;
 }
 
-.links a{
-    transition:.25s;
-}
-
-.links a:hover{
+.nav-links a:hover{
     color:var(--purple);
 }
 
-.navButton{
+.nav-button{
+    background:var(--black);
+    color:#fff!important;
     padding:11px 20px;
-    border-radius:30px;
-    background:var(--purple);
-    color:white!important;
-    box-shadow:0 10px 25px rgba(103,64,184,.18);
+    border-radius:50px;
 }
 
 .menu{
     display:none;
-    border:0;
-    background:white;
+    border:1px solid var(--line);
+    background:#fff;
     border-radius:10px;
-    padding:9px 12px;
+    padding:8px 12px;
     font-size:20px;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-    min-height:100vh;
-    padding:135px 0 90px;
-    position:relative;
-    overflow:hidden;
+    padding:170px 0 110px;
     background:
-        radial-gradient(circle at 12% 20%,rgba(255,217,199,.9),transparent 28%),
-        radial-gradient(circle at 88% 15%,rgba(217,199,255,.8),transparent 30%),
-        radial-gradient(circle at 55% 100%,rgba(189,238,226,.55),transparent 30%),
-        var(--cream);
+    radial-gradient(circle at 8% 20%,#eee2f5 0,transparent 25%),
+    radial-gradient(circle at 92% 10%,#f2eee7 0,transparent 28%),
+    var(--bg);
 }
 
-.heroGrid{
+.hero-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+    grid-template-columns:1.15fr .85fr;
+    gap:80px;
     align-items:center;
 }
 
-/* decorative background */
-
-.blob{
-    position:absolute;
-    border-radius:50%;
-    filter:blur(1px);
-    opacity:.7;
-}
-
-.blob.one{
-    width:90px;
-    height:90px;
-    background:var(--yellow);
-    top:150px;
-    left:4%;
-}
-
-.blob.two{
-    width:45px;
-    height:45px;
-    background:var(--pink);
-    bottom:130px;
-    left:42%;
-}
-
-.blob.three{
-    width:65px;
-    height:65px;
-    background:var(--mint);
-    top:35%;
-    right:3%;
-}
-
-/* hero text */
-
-.eyebrow{
-    display:inline-flex;
+.kicker{
+    display:flex;
     align-items:center;
-    gap:9px;
-    padding:9px 15px;
-    border-radius:30px;
-    background:white;
-    box-shadow:0 10px 30px rgba(103,64,184,.08);
+    gap:10px;
     color:var(--purple);
     font-size:11px;
     font-weight:700;
-    letter-spacing:.12em;
+    letter-spacing:.18em;
     text-transform:uppercase;
     margin-bottom:25px;
 }
 
-.dot{
-    width:8px;
-    height:8px;
-    border-radius:50%;
-    background:#ff8da8;
+.kicker:before{
+    content:"";
+    width:30px;
+    height:2px;
+    background:var(--purple);
 }
 
-h1{
+.hero h1{
     font-family:"Playfair Display",serif;
-    font-size:clamp(52px,6.3vw,84px);
+    font-size:clamp(55px,7vw,88px);
     line-height:.98;
-    letter-spacing:-.055em;
+    letter-spacing:-.05em;
 }
 
-.gradientText{
-    display:block;
-    background:linear-gradient(
-        90deg,
-        #6841b8,
-        #d75d99,
-        #e89b55
-    );
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+.hero h1 span{
+    color:var(--purple);
 }
 
-.heroDescription{
-    max-width:570px;
-    margin-top:26px;
+.hero-text{
+    max-width:650px;
     color:var(--muted);
-    font-size:16px;
-    line-height:1.8;
+    font-size:17px;
+    margin-top:28px;
 }
 
-.heroButtons{
+.buttons{
     display:flex;
     gap:12px;
     flex-wrap:wrap;
-    margin-top:31px;
+    margin-top:30px;
 }
 
 .btn{
     display:inline-flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     padding:14px 23px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-dark{
+    background:var(--black);
+    color:#fff;
+}
+
+.btn-light{
+    background:#fff;
+    border:1px solid #dcd5df;
+}
+
+/* HERO INFO */
+
+.hero-card{
+    background:var(--black);
+    color:#fff;
     border-radius:30px;
-    font-size:13px;
-    font-weight:700;
-    transition:.3s;
+    padding:35px;
+    box-shadow:0 25px 70px rgba(20,15,25,.13);
 }
 
-.primary{
-    background:var(--purple);
-    color:white;
-    box-shadow:0 13px 28px rgba(103,64,184,.2);
+.hero-card small{
+    color:#cdbbd8;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:10px;
 }
 
-.primary:hover{
-    transform:translateY(-3px);
+.hero-card h2{
+    font-family:"Playfair Display",serif;
+    font-size:40px;
+    line-height:1.05;
+    margin:18px 0 28px;
 }
 
-.outline{
-    border:1px solid rgba(103,64,184,.2);
-    background:white;
-    color:var(--purple);
-}
-
-.outline:hover{
-    transform:translateY(-3px);
-}
-
-/* ================= CREATIVE ART ================= */
-
-.art{
-    height:590px;
-    position:relative;
+.info-row{
     display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.artCard{
-    width:420px;
-    height:480px;
-    border-radius:45% 45% 28% 28%;
-    background:
-        linear-gradient(
-            145deg,
-            #f7c4dc,
-            #d8c4ff 45%,
-            #bfeee4
-        );
-    position:relative;
-    transform:rotate(4deg);
-    box-shadow:
-        0 35px 70px rgba(103,64,184,.16);
-}
-
-/* big circle */
-
-.artCircle{
-    width:260px;
-    height:260px;
-    border-radius:50%;
-    background:var(--yellow);
-    position:absolute;
-    top:70px;
-    left:75px;
-}
-
-.artCircle:after{
-    content:"";
-    position:absolute;
-    width:175px;
-    height:175px;
-    border-radius:50%;
-    background:#ff9fc3;
-    top:42px;
-    left:43px;
-}
-
-/* creative D */
-
-.artD{
-    position:absolute;
-    width:180px;
-    height:180px;
-    border:35px solid var(--purple);
-    border-left-color:transparent;
-    border-radius:50%;
-    left:120px;
-    top:110px;
-    z-index:3;
-}
-
-.artD:after{
-    content:"";
-    position:absolute;
-    width:75px;
-    height:35px;
-    background:var(--purple);
-    left:-35px;
-    top:38px;
-    border-radius:5px;
-}
-
-/* pencil */
-
-.pencil{
-    position:absolute;
-    width:205px;
-    height:30px;
-    background:#6740b8;
-    border-radius:20px;
-    transform:rotate(-38deg);
-    right:20px;
-    bottom:115px;
-    z-index:5;
-    box-shadow:0 8px 20px rgba(52,32,95,.2);
-}
-
-.pencil:before{
-    content:"";
-    position:absolute;
-    left:-30px;
-    top:0;
-    border-top:15px solid transparent;
-    border-bottom:15px solid transparent;
-    border-right:35px solid #f2d1b8;
-}
-
-.pencil:after{
-    content:"";
-    position:absolute;
-    right:-19px;
-    top:7px;
-    width:0;
-    height:0;
-    border-top:8px solid transparent;
-    border-bottom:8px solid transparent;
-    border-left:20px solid #f7b2c7;
-}
-
-/* star */
-
-.star{
-    position:absolute;
-    color:white;
-    font-size:55px;
-    top:45px;
-    right:35px;
-    transform:rotate(12deg);
-    z-index:6;
-}
-
-/* small shapes */
-
-.shape{
-    position:absolute;
-    z-index:7;
-}
-
-.shape.square{
-    width:52px;
-    height:52px;
-    border-radius:13px;
-    background:#6740b8;
-    left:30px;
-    bottom:80px;
-    transform:rotate(17deg);
-}
-
-.shape.circle{
-    width:35px;
-    height:35px;
-    border-radius:50%;
-    background:#ff9d70;
-    right:5px;
-    top:120px;
-}
-
-.shape.ring{
-    width:75px;
-    height:75px;
-    border:12px solid #fff;
-    border-radius:50%;
-    left:5px;
-    top:90px;
-}
-
-/* text on artwork */
-
-.artText{
-    position:absolute;
-    bottom:45px;
-    left:55px;
-    font-size:11px;
-    letter-spacing:.2em;
-    font-weight:700;
-    color:var(--purple-dark);
-    transform:rotate(-4deg);
-}
-
-/* ================= MARQUEE ================= */
-
-.marquee{
-    overflow:hidden;
-    white-space:nowrap;
-    background:var(--purple);
-    color:white;
-    padding:17px 0;
-}
-
-.marqueeTrack{
-    display:inline-block;
-    animation:move 25s linear infinite;
+    justify-content:space-between;
+    gap:20px;
+    padding:16px 0;
+    border-top:1px solid rgba(255,255,255,.14);
     font-size:13px;
-    font-weight:700;
-    letter-spacing:.14em;
 }
 
-.marqueeTrack span{
-    margin:0 35px;
-    color:var(--yellow);
+.info-row span{
+    color:#bcb4c2;
 }
 
-@keyframes move{
-    from{transform:translateX(0)}
-    to{transform:translateX(-50%)}
-}
-
-/* ================= ABOUT ================= */
+/* ================= COMMON ================= */
 
 section{
     padding:105px 0;
 }
 
-.about{
-    background:white;
+.section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:30px;
+    margin-bottom:48px;
 }
 
-.sectionLabel{
+.eyebrow{
     color:var(--purple);
-    text-transform:uppercase;
     font-size:11px;
-    letter-spacing:.2em;
+    text-transform:uppercase;
+    letter-spacing:.18em;
     font-weight:700;
-    margin-bottom:13px;
+    margin-bottom:10px;
 }
 
-.sectionTitle{
+.section-title{
     font-family:"Playfair Display",serif;
-    font-size:clamp(42px,5vw,62px);
+    font-size:clamp(42px,5vw,64px);
     line-height:1;
 }
 
-.aboutGrid{
+.section-intro{
+    max-width:480px;
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#fff;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.about-grid{
     display:grid;
     grid-template-columns:.8fr 1.2fr;
-    gap:70px;
+    gap:80px;
 }
 
-.aboutText{
+.about-text{
     color:var(--muted);
     font-size:16px;
-    line-height:1.8;
 }
 
-.aboutText p{
-    margin-bottom:17px;
+.about-text p{
+    margin-bottom:18px;
 }
 
-.highlight{
-    color:var(--purple);
-    font-weight:700;
+.about-text strong{
+    color:var(--text);
 }
 
-.stats{
+.facts{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-    margin-top:30px;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
 }
 
-.stat{
-    padding:20px;
-    background:var(--cream);
-    border-radius:18px;
+.fact{
+    padding:27px;
+    background:#fcfbfd;
+    border:1px solid var(--line);
+    border-radius:20px;
 }
 
-.stat strong{
+.fact strong{
     display:block;
-    color:var(--purple);
-    font-size:25px;
+    font-size:22px;
+    margin-bottom:5px;
 }
 
-.stat small{
+.fact span{
     color:var(--muted);
-    font-size:11px;
+    font-size:12px;
 }
 
 /* ================= SERVICES ================= */
 
 .services{
-    background:#fff8f2;
+    background:#f6f2f8;
 }
 
-.servicesHead{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:30px;
-}
-
-.servicesIntro{
-    max-width:450px;
-    color:var(--muted);
-}
-
-.serviceGrid{
+.service-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:17px;
-    margin-top:50px;
+    gap:16px;
 }
 
 .service{
-    min-height:245px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:22px;
     padding:28px;
-    background:white;
-    border-radius:25px;
-    border:1px solid rgba(103,64,184,.08);
-    position:relative;
-    overflow:hidden;
-    transition:.35s;
+    min-height:220px;
+    transition:.25s;
 }
 
 .service:hover{
-    transform:translateY(-8px) rotate(-1deg);
-    box-shadow:0 25px 50px rgba(103,64,184,.12);
+    transform:translateY(-5px);
+    box-shadow:0 18px 40px rgba(20,15,25,.07);
 }
 
-.service:nth-child(1){background:#fff0e9}
-.service:nth-child(2){background:#f6eaff}
-.service:nth-child(3){background:#eafff8}
-.service:nth-child(4){background:#fff9d9}
-.service:nth-child(5){background:#ffeaf4}
-.service:nth-child(6){background:#eaf1ff}
-
-.serviceNumber{
-    font-size:11px;
+.service-number{
     color:var(--purple);
-    font-weight:700;
+    font-size:11px;
     letter-spacing:.15em;
+    font-weight:700;
 }
 
 .service h3{
     font-size:21px;
-    margin-top:30px;
-    margin-bottom:10px;
+    margin:35px 0 10px;
 }
 
 .service p{
@@ -615,168 +363,143 @@ section{
     font-size:13px;
 }
 
-/* ================= PORTFOLIO ================= */
-
-.portfolio{
-    background:white;
-}
-
-.portfolioGrid{
-    margin-top:50px;
-    display:grid;
-    grid-template-columns:repeat(12,1fr);
-    gap:17px;
-}
-
-.project{
-    min-height:290px;
-    border-radius:27px;
-    padding:30px;
-    display:flex;
-    align-items:end;
-    position:relative;
-    overflow:hidden;
-    color:var(--text);
-}
-
-.project:nth-child(1){
-    grid-column:span 7;
-    background:#ffd9c7;
-}
-
-.project:nth-child(2){
-    grid-column:span 5;
-    background:#d9c7ff;
-}
-
-.project:nth-child(3){
-    grid-column:span 5;
-    background:#bdeee2;
-}
-
-.project:nth-child(4){
-    grid-column:span 7;
-    background:#ffe99a;
-}
-
-.projectShape{
-    position:absolute;
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    right:-50px;
-    top:-50px;
-    background:rgba(255,255,255,.55);
-}
-
-.projectContent{
-    position:relative;
-    z-index:2;
-}
-
-.project small{
-    font-size:10px;
-    letter-spacing:.17em;
-    text-transform:uppercase;
+.service-link{
+    display:inline-block;
+    margin-top:20px;
     color:var(--purple);
+    font-size:11px;
     font-weight:700;
 }
 
-.project h3{
-    font-family:"Playfair Display",serif;
-    font-size:34px;
-    margin-top:7px;
+/* ================= WHY ================= */
+
+.why{
+    background:#fff;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.why-card{
+    padding:30px;
+    border:1px solid var(--line);
+    border-radius:22px;
+    background:var(--bg);
+}
+
+.why-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:var(--muted);
+    font-size:13px;
 }
 
 /* ================= PROCESS ================= */
 
 .process{
-    background:#f7efff;
+    background:var(--black);
+    color:#fff;
 }
 
-.processGrid{
+.process .eyebrow{
+    color:#cdbbd8;
+}
+
+.process .section-intro{
+    color:#bdb5c2;
+}
+
+.process-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-    margin-top:50px;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:#3b3440;
 }
 
 .step{
-    background:white;
+    background:var(--black);
     padding:30px;
-    border-radius:23px;
+    min-height:210px;
 }
 
-.stepNo{
-    width:43px;
-    height:43px;
-    display:grid;
-    place-items:center;
-    border-radius:50%;
-    background:var(--lavender);
-    color:var(--purple);
+.step-number{
+    color:#cdbbd8;
+    font-size:12px;
     font-weight:700;
-    margin-bottom:20px;
 }
 
 .step h3{
-    font-size:22px;
-    margin-bottom:8px;
+    font-size:19px;
+    margin:28px 0 8px;
 }
 
 .step p{
-    color:var(--muted);
+    color:#bdb5c2;
     font-size:13px;
 }
 
 /* ================= CONTACT ================= */
 
-.contact{
-    padding-top:80px;
-    background:var(--cream);
+.contact-box{
+    background:var(--purple-light);
+    border-radius:30px;
+    padding:65px;
+    display:grid;
+    grid-template-columns:1fr .75fr;
+    gap:50px;
+    align-items:end;
 }
 
-.contactBox{
-    min-height:430px;
-    padding:70px;
-    border-radius:38px;
-    background:
-        radial-gradient(circle at 85% 15%,#ffdca4,transparent 22%),
-        radial-gradient(circle at 15% 90%,#e0caff,transparent 30%),
-        #f4d7e9;
-    position:relative;
-    overflow:hidden;
-}
-
-.contactBox h2{
+.contact-box h2{
     font-family:"Playfair Display",serif;
     font-size:clamp(45px,6vw,75px);
-    max-width:800px;
-    line-height:1;
+    line-height:.98;
 }
 
-.contactBox p{
-    max-width:600px;
-    margin:20px 0 27px;
-    color:#655c6e;
+.contact-box p{
+    color:var(--muted);
+    margin-top:20px;
+    max-width:620px;
 }
 
-.contactDecor{
-    position:absolute;
-    right:70px;
-    bottom:-50px;
-    width:190px;
-    height:190px;
-    border-radius:50%;
-    border:35px solid rgba(103,64,184,.25);
+.contact-details{
+    border-left:1px solid rgba(91,42,134,.18);
+    padding-left:30px;
+}
+
+.detail{
+    padding:15px 0;
+    border-bottom:1px solid rgba(91,42,134,.15);
+}
+
+.detail small{
+    display:block;
+    color:var(--purple);
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-weight:700;
+}
+
+.detail a,
+.detail span{
+    display:block;
+    margin-top:5px;
+    font-size:14px;
 }
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:var(--purple-dark);
-    color:white;
-    padding:38px 0;
+    background:var(--black);
+    color:#fff;
+    padding:35px 0;
 }
 
 .footer{
@@ -786,38 +509,36 @@ footer{
     font-size:12px;
 }
 
-.footerLinks{
+.footer-links{
     display:flex;
     gap:20px;
 }
 
-.footerLinks a:hover{
-    color:var(--yellow);
+.footer-links a:hover{
+    color:#cdbbd8;
 }
 
-/* ================= FLOATING ================= */
+/* ================= FLOATING WHATSAPP ================= */
 
-.float{
+.whatsapp{
     position:fixed;
-    right:22px;
-    bottom:22px;
-    width:55px;
-    height:55px;
-    display:grid;
-    place-items:center;
-    background:var(--purple);
-    color:white;
-    border-radius:50%;
-    font-size:22px;
-    z-index:999;
-    box-shadow:0 12px 30px rgba(103,64,184,.25);
+    right:20px;
+    bottom:20px;
+    z-index:100;
+    background:#25D366;
+    color:#fff;
+    padding:13px 18px;
+    border-radius:50px;
+    font-size:12px;
+    font-weight:700;
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
 
-    .links{
+    .nav-links{
         display:none;
     }
 
@@ -825,175 +546,167 @@ footer{
         display:block;
     }
 
-    .heroGrid,
-    .aboutGrid{
+    .hero-grid,
+    .about-grid,
+    .contact-box{
         grid-template-columns:1fr;
     }
 
-    .art{
-        height:500px;
-    }
-
-    .serviceGrid{
+    .service-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .processGrid{
+    .why-grid{
         grid-template-columns:1fr;
     }
 
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-details{
+        border-left:0;
+        border-top:1px solid rgba(91,42,134,.18);
+        padding:25px 0 0;
+    }
 }
 
 @media(max-width:600px){
 
+    .nav{
+        height:72px;
+    }
+
+    .logo{
+        width:145px;
+    }
+
     .hero{
-        padding-top:110px;
+        padding-top:125px;
     }
 
-    h1{
-        font-size:48px;
+    .hero-grid{
+        gap:45px;
     }
 
-    .art{
-        height:430px;
+    .hero h1{
+        font-size:50px;
     }
 
-    .artCard{
-        width:310px;
-        height:370px;
+    section{
+        padding:78px 0;
     }
 
-    .artCircle{
-        width:205px;
-        height:205px;
-        left:52px;
-        top:60px;
+    .section-head{
+        display:block;
     }
 
-    .artCircle:after{
-        width:135px;
-        height:135px;
-        left:35px;
-        top:35px;
+    .section-intro{
+        margin-top:18px;
     }
 
-    .artD{
-        width:140px;
-        height:140px;
-        left:85px;
-        top:90px;
-        border-width:28px;
-    }
-
-    .pencil{
-        width:150px;
-        right:5px;
-        bottom:90px;
-    }
-
-    .serviceGrid{
+    .service-grid,
+    .facts,
+    .process-grid{
         grid-template-columns:1fr;
     }
 
-    .stats{
-        grid-template-columns:1fr;
-    }
-
-    .portfolioGrid{
-        grid-template-columns:1fr;
-    }
-
-    .project,
-    .project:nth-child(1),
-    .project:nth-child(2),
-    .project:nth-child(3),
-    .project:nth-child(4){
-        grid-column:auto;
-        min-height:240px;
-    }
-
-    .contactBox{
-        padding:45px 25px;
-    }
-
-    .contactDecor{
-        right:-50px;
+    .contact-box{
+        padding:38px 25px;
     }
 
     .footer{
         display:block;
     }
 
-    .footerLinks{
+    .footer-links{
         margin-top:15px;
         flex-wrap:wrap;
     }
 
+    .whatsapp{
+        right:14px;
+        bottom:14px;
+    }
 }
 
 </style>
 </head>
 
+
 <body>
 
-<!-- NAVIGATION -->
+<!-- ================= NAVBAR ================= -->
 
 <nav>
+
 <div class="container nav">
 
-<a href="#home" class="brand">
-<img src="assets/logo.png" alt="DesignKaro Studio">
+<a href="#home">
+<img src="assets/logo.png"
+     class="logo"
+     alt="DesignKaro Studio">
 </a>
 
-<div class="links">
+<div class="nav-links">
+
 <a href="#home">Home</a>
+
 <a href="#about">About</a>
+
 <a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
+
 <a href="#process">Process</a>
-<a href="#contact" class="navButton">Let's Talk</a>
+
+<a href="#contact" class="nav-button">
+Let's Talk
+</a>
+
 </div>
 
-<button class="menu" onclick="mobileMenu()">☰</button>
+<button class="menu"
+onclick="toggleMenu()">
+☰
+</button>
 
 </div>
+
 </nav>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-<div class="blob one"></div>
-<div class="blob two"></div>
-<div class="blob three"></div>
-
-<div class="container heroGrid">
+<div class="container hero-grid">
 
 <div>
 
-<div class="eyebrow">
-<span class="dot"></span>
-Raman  · DesignKaro Studio
+<div class="kicker">
+DesignKaro Studio
 </div>
 
 <h1>
-Ideas that
-<span class="gradientText">look different.</span>
+Design that makes your
+<span>brand clear.</span>
 </h1>
 
-<p class="heroDescription">
-Graphic Designer, Digital Marketer & Web Developer creating bold visual identities, digital experiences and creative solutions for modern businesses.
+<p class="hero-text">
+Creative design, digital marketing, SEO and web solutions
+for businesses that want a professional and consistent
+digital presence.
 </p>
 
-<div class="heroButtons">
+<div class="buttons">
 
-<a href="#portfolio" class="btn primary">
-Explore My Work ↗
+<a href="#contact"
+class="btn btn-dark">
+Start a Project ↗
 </a>
 
-<a href="#contact" class="btn outline">
-Start a Project
+<a href="#services"
+class="btn btn-light">
+View Services
 </a>
 
 </div>
@@ -1001,30 +714,34 @@ Start a Project
 </div>
 
 
-<!-- ORIGINAL CREATIVE ILLUSTRATION -->
+<div class="hero-card">
 
-<div class="art">
+<small>
+What I do
+</small>
 
-<div class="artCard">
+<h2>
+One place for your digital brand.
+</h2>
 
-<div class="artCircle"></div>
-
-<div class="artD"></div>
-
-<div class="star">✦</div>
-
-<div class="shape square"></div>
-
-<div class="shape circle"></div>
-
-<div class="shape ring"></div>
-
-<div class="pencil"></div>
-
-<div class="artText">
-DESIGN · CREATE · BUILD
+<div class="info-row">
+<b>Graphic Design</b>
+<span>Brand visuals</span>
 </div>
 
+<div class="info-row">
+<b>Digital Marketing</b>
+<span>Growth support</span>
+</div>
+
+<div class="info-row">
+<b>SEO & GMB</b>
+<span>Local visibility</span>
+</div>
+
+<div class="info-row">
+<b>Web Development</b>
+<span>Modern websites</span>
 </div>
 
 </div>
@@ -1034,77 +751,85 @@ DESIGN · CREATE · BUILD
 </section>
 
 
-<!-- MARQUEE -->
-
-<div class="marquee">
-
-<div class="marqueeTrack">
-
-DESIGN WITH PURPOSE
-<span>✦</span>
-BUILD STRONG BRANDS
-<span>✦</span>
-CREATE DIFFERENT
-<span>✦</span>
-DESIGN WITH PURPOSE
-<span>✦</span>
-BUILD STRONG BRANDS
-<span>✦</span>
-CREATE DIFFERENT
-<span>✦</span>
-
-</div>
-
-</div>
-
-
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
-<div class="container aboutGrid">
+<div class="container">
+
+<div class="section-head">
 
 <div>
 
-<div class="sectionLabel">
-About Me
+<div class="eyebrow">
+About
 </div>
 
-<h2 class="sectionTitle">
+<h2 class="section-title">
 Who I Am
 </h2>
 
 </div>
 
-<div class="aboutText">
-
-<p>
-I'm <span class="highlight">Raman </span>, founder of DesignKaro Studio.
+<p class="section-intro">
+A personal studio focused on useful design,
+practical marketing and clean digital experiences.
 </p>
 
-<p>
-I work across graphic design, branding, digital marketing, SEO and web development to help businesses build a clear and memorable digital presence.
-</p>
-
-<p>
-My approach combines <span class="highlight">creative thinking + clean design + practical digital strategy.</span>
-</p>
-
-<div class="stats">
-
-<div class="stat">
-<strong>4+</strong>
-<small>Years Experience</small>
 </div>
 
-<div class="stat">
-<strong>Design</strong>
-<small>Brand Identity</small>
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<p>
+<strong>DesignKaro Studio</strong> is built around a simple idea:
+good design should look professional and also communicate clearly.
+</p>
+
+<p>
+I work across branding, social media design,
+digital marketing, SEO and web development so businesses
+can manage their digital presence with one creative partner.
+</p>
+
+<p>
+From a single social media post to a complete website,
+the focus stays on clarity, consistency and a polished brand image.
+</p>
+
 </div>
 
-<div class="stat">
-<strong>Digital</strong>
-<small>Marketing & SEO</small>
+
+<div class="facts">
+
+<div class="fact">
+<strong>Branding</strong>
+<span>
+Identity, logos & visual systems
+</span>
+</div>
+
+<div class="fact">
+<strong>Social</strong>
+<span>
+Posts, campaigns & content design
+</span>
+</div>
+
+<div class="fact">
+<strong>Marketing</strong>
+<span>
+Digital strategy & promotion
+</span>
+</div>
+
+<div class="fact">
+<strong>Web</strong>
+<span>
+Responsive business websites
+</span>
 </div>
 
 </div>
@@ -1116,70 +841,168 @@ My approach combines <span class="highlight">creative thinking + clean design + 
 </section>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section class="services" id="services">
 
 <div class="container">
 
-<div class="servicesHead">
+<div class="section-head">
 
 <div>
 
-<div class="sectionLabel">
-What I Do
+<div class="eyebrow">
+Services
 </div>
 
-<h2 class="sectionTitle">
-Creative Services
+<h2 class="section-title">
+What I Can Do
 </h2>
 
 </div>
 
-<p class="servicesIntro">
-From visual identity to digital growth, DesignKaro Studio brings design and digital services together under one roof.
+<p class="section-intro">
+Choose one service or combine multiple services
+for a complete digital presence.
 </p>
 
 </div>
 
 
-<div class="serviceGrid">
+<div class="service-grid">
+
 
 <div class="service">
-<div class="serviceNumber">01 — DESIGN</div>
-<h3>Graphic Design</h3>
-<p>Logos, social media creatives, posters, flyers and professional visual communication.</p>
+
+<div class="service-number">
+01 / BRANDING
 </div>
 
-<div class="service">
-<div class="serviceNumber">02 — BRANDING</div>
-<h3>Brand Identity</h3>
-<p>Complete visual systems that make businesses look consistent and memorable.</p>
+<h3>
+Logo & Brand Identity
+</h3>
+
+<p>
+Professional logos, brand direction
+and supporting visual assets.
+</p>
+
+<span class="service-link">
+Identity →
+</span>
+
 </div>
 
-<div class="service">
-<div class="serviceNumber">03 — DIGITAL</div>
-<h3>Digital Marketing</h3>
-<p>Creative social media content and digital strategies for growing brands.</p>
-</div>
 
 <div class="service">
-<div class="serviceNumber">04 — SEO</div>
-<h3>SEO & GMB</h3>
-<p>Local SEO and Google Business optimisation to improve online visibility.</p>
+
+<div class="service-number">
+02 / SOCIAL
 </div>
 
-<div class="service">
-<div class="serviceNumber">05 — WEB</div>
-<h3>Web Development</h3>
-<p>Modern responsive websites designed around your brand and business goals.</p>
+<h3>
+Social Media Design
+</h3>
+
+<p>
+Creative posts, banners, campaign creatives
+and consistent social visuals.
+</p>
+
+<span class="service-link">
+Content →
+</span>
+
 </div>
 
+
 <div class="service">
-<div class="serviceNumber">06 — PRINT</div>
-<h3>Print & Invitations</h3>
-<p>Wedding cards, stationery, brochures, certificates and promotional designs.</p>
+
+<div class="service-number">
+03 / MARKETING
 </div>
+
+<h3>
+Digital Marketing
+</h3>
+
+<p>
+Practical digital promotion focused on
+visibility, communication and growth.
+</p>
+
+<span class="service-link">
+Marketing →
+</span>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">
+04 / SEO
+</div>
+
+<h3>
+SEO & GMB
+</h3>
+
+<p>
+Search and local-profile support to improve
+how your business is discovered online.
+</p>
+
+<span class="service-link">
+Visibility →
+</span>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">
+05 / WEB
+</div>
+
+<h3>
+Web Development
+</h3>
+
+<p>
+Clean, responsive business websites with
+clear sections and strong calls to action.
+</p>
+
+<span class="service-link">
+Web →
+</span>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">
+06 / SUPPORT
+</div>
+
+<h3>
+Creative Support
+</h3>
+
+<p>
+Ongoing design and digital support for
+businesses that need a reliable creative partner.
+</p>
+
+<span class="service-link">
+Support →
+</span>
+
+</div>
+
 
 </div>
 
@@ -1188,111 +1011,130 @@ From visual identity to digital growth, DesignKaro Studio brings design and digi
 </section>
 
 
-<!-- PORTFOLIO -->
+<!-- ================= WHY DESIGNKARO ================= -->
 
-<section class="portfolio" id="portfolio">
+<section class="why">
 
 <div class="container">
 
-<div class="sectionLabel">
-Selected Work
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+For Businesses
 </div>
 
-<h2 class="sectionTitle">
-Creative Playground
+<h2 class="section-title">
+More Than Just Design
 </h2>
 
+</div>
 
-<div class="portfolioGrid">
+<p class="section-intro">
+The goal is not to add decoration.
+The goal is to make your business easier to understand and trust.
+</p>
 
-<div class="portfolioGrid">
-
-  <div class="project">
-    <img src="assets/logo design 1.png" alt="Logo Design"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Brand Identity</small>
-      <h3>Logo Design</h3>
-    </div>
-  </div>
+</div>
 
 
-  <div class="project">
-    <img src="assets/post design2 .png" alt="Creative Post"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Creative Design</small>
-      <h3>Post Design</h3>
-    </div>
-  </div>
+<div class="why-grid">
 
-  <div class="project">
-    <img src="assets/post design 3.png" alt="Poster Design"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Graphic Design</small>
-      <h3>Poster Design</h3>
-    </div>
-  </div>
 
-  <div class="project">
-    <img src="assets/post design 4.png" alt="Social Media Post"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Social Media</small>
-      <h3>Visual Content</h3>
-    </div>
-  </div>
+<div class="why-card">
 
-  <div class="project">
-    <img src="assets/post design 5.png" alt="Marketing Design"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Marketing</small>
-      <h3>Marketing Creative</h3>
-    </div>
-  </div>
+<h3>
+Consistent Brand
+</h3>
 
-  <div class="project">
-    <img src="assets/post design 6.png" alt="Creative Artwork"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div class="projectContent">
-      <small>Design</small>
-      <h3>Creative Artwork</h3>
-    </div>
-  </div>
+<p>
+Keep your logo, colours, typography and communication
+aligned across digital touchpoints.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Better Presence
+</h3>
+
+<p>
+Present your services clearly across your website,
+social channels and local business profile.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Practical Execution
+</h3>
+
+<p>
+Get design, marketing and web work handled
+with a straightforward process and clear communication.
+</p>
+
+</div>
+
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- PROCESS -->
+<!-- ================= PROCESS ================= -->
 
 <section class="process" id="process">
 
 <div class="container">
 
-<div class="sectionLabel">
-How It Works
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+Process
 </div>
 
-<h2 class="sectionTitle">
-From Idea<br>
-to Identity.
+<h2 class="section-title">
+Simple. Clear. Done.
 </h2>
 
+</div>
 
-<div class="processGrid">
+<p class="section-intro">
+A straightforward workflow from your requirement
+to the final delivery.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
 
 <div class="step">
 
-<div class="stepNo">01</div>
+<div class="step-number">
+01 — DISCOVER
+</div>
 
-<h3>Discover</h3>
+<h3>
+Understand
+</h3>
 
 <p>
-Understand your business, audience, goals and creative direction.
+We discuss your business, audience,
+requirement and expected outcome.
 </p>
 
 </div>
@@ -1300,12 +1142,17 @@ Understand your business, audience, goals and creative direction.
 
 <div class="step">
 
-<div class="stepNo">02</div>
+<div class="step-number">
+02 — PLAN
+</div>
 
-<h3>Create</h3>
+<h3>
+Plan
+</h3>
 
 <p>
-Turn the idea into a clear visual concept and digital experience.
+The right creative direction, structure
+and deliverables are decided.
 </p>
 
 </div>
@@ -1313,15 +1160,39 @@ Turn the idea into a clear visual concept and digital experience.
 
 <div class="step">
 
-<div class="stepNo">03</div>
+<div class="step-number">
+03 — CREATE
+</div>
 
-<h3>Deliver</h3>
+<h3>
+Create
+</h3>
 
 <p>
-Polish everything and deliver professional assets ready to use.
+Design and digital work is developed
+with attention to clarity and consistency.
 </p>
 
 </div>
+
+
+<div class="step">
+
+<div class="step-number">
+04 — DELIVER
+</div>
+
+<h3>
+Launch
+</h3>
+
+<p>
+Final files or website are delivered,
+checked and prepared for use.
+</p>
+
+</div>
+
 
 </div>
 
@@ -1330,32 +1201,109 @@ Polish everything and deliver professional assets ready to use.
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 
-<section class="contact" id="contact">
+<section id="contact">
 
 <div class="container">
 
-<div class="contactBox">
+<div class="contact-box">
 
-<div class="sectionLabel">
-Let's Create
+
+<div>
+
+<div class="eyebrow">
+Contact
 </div>
 
 <h2>
-Have an idea?
-Let's make it stand out.
+Have a project in mind?
 </h2>
 
 <p>
-Have a logo, branding, website, SEO or digital marketing project in mind? Let's talk.
+Tell me what you need and let's discuss the right
+design, marketing or web solution for your business.
 </p>
 
-<a href="https://wa.me/918376852307" class="btn primary">
-Start a Conversation ↗
+
+<div class="buttons">
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/918376852307"
+target="_blank"
+rel="noopener"
+class="btn btn-dark">
+
+WhatsApp Me ↗
+
 </a>
 
-<div class="contactDecor"></div>
+
+<!-- EMAIL BUTTON -->
+
+<a href="mailto:designkarostudio@gmail.com"
+class="btn btn-light">
+
+Email Me ↗
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-details">
+
+
+<div class="detail">
+
+<small>
+WhatsApp
+</small>
+
+<a href="https://wa.me/918376852307"
+target="_blank"
+rel="noopener">
+
++91 83768 52307
+
+</a>
+
+</div>
+
+
+<div class="detail">
+
+<small>
+Email
+</small>
+
+<a href="mailto:designkarostudio@gmail.com">
+
+designkarostudio@gmail.com
+
+</a>
+
+</div>
+
+
+<div class="detail">
+
+<small>
+Studio
+</small>
+
+<span>
+DesignKaro Studio
+</span>
+
+</div>
+
+
+</div>
+
 
 </div>
 
@@ -1364,22 +1312,29 @@ Start a Conversation ↗
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
 <div class="container footer">
 
 <div>
-© 2026 DesignKaro Studio · Raman
+© 2026 DesignKaro Studio. All rights reserved.
 </div>
 
-<div class="footerLinks">
+<div class="footer-links">
 
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
+<a href="#about">
+About
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#contact">
+Contact
+</a>
 
 </div>
 
@@ -1388,35 +1343,42 @@ Start a Conversation ↗
 </footer>
 
 
-<!-- FLOATING BUTTON -->
+<!-- ================= FLOATING WHATSAPP ================= -->
 
-<a href="mailto:designkarostudio@gmail.com" class="float">
-✦
+<a href="https://wa.me/918376852307"
+target="_blank"
+rel="noopener"
+class="whatsapp">
+
+WhatsApp ↗
+
 </a>
 
 
 <script>
 
-function mobileMenu(){
+function toggleMenu(){
 
-const links=document.querySelector(".links");
+const links =
+document.querySelector(".nav-links");
 
-if(links.style.display==="flex"){
+if(links.style.display === "flex"){
 
-links.style.display="none";
+links.style.display = "none";
 
 }else{
 
-links.style.display="flex";
-links.style.position="absolute";
-links.style.top="70px";
-links.style.left="4%";
-links.style.right="4%";
-links.style.padding="20px";
-links.style.background="#fffaf5";
-links.style.borderRadius="20px";
-links.style.flexDirection="column";
-links.style.boxShadow="0 20px 50px rgba(52,32,95,.12)";
+links.style.display = "flex";
+links.style.position = "absolute";
+links.style.top = "72px";
+links.style.left = "4%";
+links.style.right = "4%";
+links.style.padding = "18px";
+links.style.background = "#fff";
+links.style.border = "1px solid #e8e3dd";
+links.style.borderRadius = "16px";
+links.style.flexDirection = "column";
+links.style.alignItems = "stretch";
 
 }
 
