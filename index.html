@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raman Gupta — Graphic Designer, Digital Marketer and Web Developer at DesignKaro Studio.">
+  <title>Raman Gupta | DesignKaro Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#090909; --panel:#111111; --panel2:#151515; --text:#f5f5f2;
+      --muted:#a8a8a2; --line:rgba(255,255,255,.10); --accent:#c7d36f;
+      --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max),92%);margin:auto}
+    nav{position:fixed;z-index:20;top:0;left:0;width:100%;background:rgba(9,9,9,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navin{height:78px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:10px}
+    .brand span{font-size:15px;letter-spacing:.12em;text-transform:uppercase}
+    .links{display:flex;gap:28px;color:#cfcfc9;font-size:14px}
+    .links a:hover{color:white}
+    .navcta{padding:11px 17px;border:1px solid var(--line);border-radius:999px}
+    .hero{min-height:100vh;display:grid;align-items:center;padding:150px 0 80px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-260px;top:80px;background:radial-gradient(circle,rgba(199,211,111,.16),transparent 68%);filter:blur(10px)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:.18em;margin-bottom:24px}
+    .eyebrow:before{content:"";width:32px;height:1px;background:var(--accent)}
+    h1{font-family:"Playfair Display",serif;font-size:clamp(52px,7vw,92px);line-height:.98;letter-spacing:-.045em;max-width:850px}
+    h1 em{font-style:normal;color:#bfcf63}
+    .hero p{margin-top:28px;color:var(--muted);font-size:18px;max-width:650px}
+    .actions{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:999px;font-weight:700;font-size:14px;transition:.25s}
+    .btn.primary{background:var(--text);color:#0b0b0b}.btn.primary:hover{transform:translateY(-2px)}
+    .btn.secondary{border:1px solid var(--line);color:#ddd}.btn.secondary:hover{border-color:#555}
+    .portrait{position:relative}
+    .portrait img{width:100%;max-height:680px;object-fit:cover;object-position:center top;border-radius:28px;filter:saturate(.88) contrast(1.03)}
+    .portrait:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(199,211,111,.24);border-radius:28px;z-index:-1}
+    section{padding:105px 0;border-top:1px solid var(--line)}
+    .section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}
+    .kicker{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.18em;margin-bottom:12px}
+    h2{font-family:"Playfair Display",serif;font-size:clamp(38px,5vw,64px);line-height:1.05}
+    .section-head p{color:var(--muted);max-width:430px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+    .about-copy p{color:#c5c5bf;font-size:18px;margin-bottom:20px}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px}
+    .fact{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+    .fact strong{display:block;font-size:23px}.fact span{color:var(--muted);font-size:12px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .service{padding:30px;background:linear-gradient(145deg,var(--panel2),#0d0d0d);border:1px solid var(--line);border-radius:20px;min-height:190px;transition:.25s}
+    .service:hover{transform:translateY(-4px);border-color:rgba(199,211,111,.4)}
+    .num{font-size:12px;color:var(--accent);letter-spacing:.12em}
+    .service h3{font-size:25px;margin:28px 0 9px}
+    .service p{color:var(--muted);font-size:14px}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .step{border-top:1px solid #3a3a3a;padding-top:22px}.step b{color:var(--accent);font-size:13px}.step h3{margin:12px 0 7px}.step p{color:var(--muted);font-size:14px}
+    .contact{background:#e9e9e2;color:#0b0b0b;border-radius:30px;padding:65px}
+    .contact .kicker{color:#526000}.contact h2{max-width:720px}.contact p{color:#555;margin:20px 0 28px;max-width:620px}
+    .contact .btn.primary{background:#0b0b0b;color:white}.contact .btn.secondary{border-color:#aaa;color:#0b0b0b}
+    footer{padding:35px 0;color:#8e8e88;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:850px){
+      .links{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:125px}.portrait{max-width:560px}
+      .services{grid-template-columns:1fr}.process{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:18px}
+      .contact{padding:38px 26px}.facts{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="DesignKaro Studio logo"><span>DesignKaro Studio</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a class="navcta" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Raman Gupta · DesignKaro Studio</div>
+        <h1>I turn ideas into <em>strong visual identities.</em></h1>
+        <p>Graphic Designer, Digital Marketer & Web Developer helping businesses build a clear, professional and memorable digital presence.</p>
+        <div class="actions">
+          <a class="btn primary" href="#services">Explore Services</a>
+          <a class="btn secondary" href="mailto:designkarostudio@gmail.com">Start a Project ↗</a>
+        </div>
+      </div>
+      <div class="portrait"><img src="assets/raman.jpg" alt="Raman Gupta"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Who I Am</div><h2>One person.<br>Multiple creative skills.</h2></div>
+        <p>I work directly with clients to turn business ideas into branding, design and digital experiences.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm Raman Gupta, founder of DesignKaro Studio. My work combines visual design with practical digital marketing and web solutions.</p>
+          <p>From a new logo to a complete online presence, I focus on work that looks professional and communicates clearly.</p>
+          <div class="facts">
+            <div class="fact"><strong>Design</strong><span>Brand & Visual Identity</span></div>
+            <div class="fact"><strong>Digital</strong><span>Marketing & SEO</span></div>
+            <div class="fact"><strong>Web</strong><span>Modern Websites</span></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">What I Do</div><h2>Services built around<br>your business.</h2></div>
+        <p>Focused services instead of unnecessary packages. Choose what your business actually needs.</p>
+      </div>
+      <div class="services">
+        <article class="service"><span class="num">01 / DESIGN</span><h3>Graphic & Brand Design</h3><p>Logo design, brand identity, social media creatives, posters, flyers and marketing visuals.</p></article>
+        <article class="service"><span class="num">02 / DIGITAL</span><h3>Digital Marketing</h3><p>Social media support, campaign creatives, content direction and digital brand presence.</p></article>
+        <article class="service"><span class="num">03 / SEARCH</span><h3>SEO & Google Business</h3><p>Local SEO, Google Business Profile optimization and practical visibility improvements.</p></article>
+        <article class="service"><span class="num">04 / WEB</span><h3>Website Development</h3><p>Responsive, modern websites designed around your brand, services and customer journey.</p></article>
+        <article class="service"><span class="num">05 / BRANDING</span><h3>Product & Business Branding</h3><p>Packaging, stationery, promotional material and consistent visual systems for businesses.</p></article>
+        <article class="service"><span class="num">06 / CREATIVE</span><h3>Invitations & Print Design</h3><p>Wedding invitations, event creatives, brochures, PDFs and professional print-ready artwork.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">How I Work</div><h2>Simple process.<br>Clear communication.</h2></div>
+      </div>
+      <div class="process">
+        <div class="step"><b>01 — DISCOVER</b><h3>Understand</h3><p>We discuss your business, audience, goals and exact requirement.</p></div>
+        <div class="step"><b>02 — CREATE</b><h3>Design & Build</h3><p>I create the visual or digital solution around the agreed direction.</p></div>
+        <div class="step"><b>03 — DELIVER</b><h3>Refine & Launch</h3><p>Feedback, final refinement and delivery in the required format.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div class="kicker">Let's Work Together</div>
+        <h2>Have a business idea or a design requirement?</h2>
+        <p>Tell me what you need. We can start with a simple conversation and turn the requirement into a clear next step.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:designkarostudio@gmail.com">Email Me</a>
+          <a class="btn secondary" href="#home">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 DesignKaro Studio · Raman Gupta</span>
+  <span>Gwalior, Madhya Pradesh · designkarostudio@gmail.com</span>
+</footer>
+</body>
+</html>
