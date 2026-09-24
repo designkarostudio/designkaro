@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/</loc>
-       <lastmod>2026-09-24T10:45:14+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/</loc>
+    <lastmod>2026-09-24</lastmod>
   </url>
 </urlset>
