@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Social Media Design Services | Social Media Designer | DesignKaro Studio</title>
+
+  <meta name="description"
+    content="Professional social media design services by DesignKaro Studio. Get engaging Instagram, Facebook, LinkedIn and social media creatives for businesses and brands across India.">
+
+  <meta name="keywords"
+    content="social media design, social media designer, Instagram post design, Instagram story design, Facebook creative design, LinkedIn design, social media creatives, DesignKaro Studio">
+
+  <meta name="author" content="DesignKaro Studio">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+    href="https://designkarostudio.github.io/designkaro/social-media-design.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+    content="Social Media Design Services | DesignKaro Studio">
+
+  <meta property="og:description"
+    content="Professional social media design services for businesses and brands across India.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+    content="https://designkarostudio.github.io/designkaro/social-media-design.html">
+
+  <meta property="og:image"
+    content="https://designkarostudio.github.io/designkaro/assets/logo.png">
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification"
+    content="6Eo8JRw-TEtaDt0J_RRxA8ncrW1vKVFAofaCtmH9k7A">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: #f7f3ee;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      width: 100%;
+      padding: 22px 0;
+      background: rgba(247,243,238,0.96);
+      border-bottom: 1px solid #e6dfd7;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 145px;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #4b006e;
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 110px 0 100px;
+      text-align: center;
+    }
+
+    .hero small {
+      display: inline-block;
+      color: #4b006e;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 1.05;
+      max-width: 950px;
+      margin: auto;
+      font-weight: 600;
+    }
+
+    .hero h1 span {
+      color: #4b006e;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 28px auto 0;
+      color: #555;
+      font-size: 18px;
+    }
+
+    .hero-buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #111;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #4b006e;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid #111;
+    }
+
+    .btn-outline:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-heading small {
+      color: #4b006e;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(36px, 5vw, 58px);
+      margin-top: 12px;
+    }
+
+    .section-heading p {
+      max-width: 700px;
+      margin: 18px auto 0;
+      color: #666;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 35px;
+      border: 1px solid #e5ddd5;
+      border-radius: 18px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: #4b006e;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    }
+
+    .service-number {
+      font-size: 14px;
+      color: #4b006e;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .process-card {
+      padding: 30px;
+      background: #111;
+      color: #fff;
+      border-radius: 18px;
+    }
+
+    .process-card span {
+      color: #c7a6d4;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .process-card h3 {
+      font-family: "Playfair Display", serif;
+      margin: 15px 0 10px;
+      font-size: 24px;
+    }
+
+    .process-card p {
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 65px);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact p {
+      color: #ccc;
+      max-width: 650px;
+      margin: 20px auto 30px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .email-btn {
+      background: #fff;
+      color: #111;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0a0a0a;
+      color: #aaa;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: #f7f3ee;
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+    }
+
+  </style>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Social Media Design Services",
+    "description": "Professional social media design services including Instagram, Facebook, LinkedIn and promotional creatives.",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "DesignKaro Studio",
+      "url": "https://designkarostudio.github.io/designkaro/",
+      "logo": "https://designkarostudio.github.io/designkaro/assets/logo.png",
+      "email": "designkarostudio@gmail.com",
+      "telephone": "+918376852307",
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      }
+    },
+    "serviceType": "Social Media Design"
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DesignKaro Studio Logo">
+      </a>
+
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <small>Social Media Design Services</small>
+
+      <h1>
+        Social Media Designs That
+        <span>Build Your Brand.</span>
+      </h1>
+
+      <p>
+        DesignKaro Studio creates professional social media designs for
+        businesses and brands across India, including Instagram posts,
+        stories, Facebook creatives, LinkedIn graphics, promotional
+        banners and campaign visuals.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="https://wa.me/918376852307"
+          class="btn btn-primary"
+          target="_blank">
+          Discuss Your Project
+        </a>
+
+        <a
+          href="index.html"
+          class="btn btn-outline">
+          Back to Home
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- SERVICES -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>What We Create</small>
+
+        <h2>Social Media Design Solutions</h2>
+
+        <p>
+          Creative and professional social media visuals designed to
+          maintain a consistent brand identity across digital platforms.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <div class="service-card">
+
+          <div class="service-number">01</div>
+
+          <h3>Instagram Post Design</h3>
+
+          <p>
+            Professional Instagram post designs for promotions,
+            announcements, offers, educational content and brand
+            communication.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-number">02</div>
+
+          <h3>Instagram Story Design</h3>
+
+          <p>
+            Creative Instagram story designs for offers, updates,
+            launches, polls, announcements and daily social media
+            communication.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-number">03</div>
+
+          <h3>Facebook & LinkedIn Creatives</h3>
+
+          <p>
+            Professional social media graphics for Facebook and LinkedIn
+            to communicate your services, products, announcements and
+            business updates.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-number">04</div>
+
+          <h3>Promotional Designs</h3>
+
+          <p>
+            Eye-catching promotional creatives for special offers,
+            discounts, new products, events and business campaigns.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-number">05</div>
+
+          <h3>Campaign Creatives</h3>
+
+          <p>
+            Coordinated creative designs for digital campaigns with
+            consistent layouts, typography, messaging and brand identity.
+          </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+          <div class="service-number">06</div>
+
+          <h3>Social Media Branding</h3>
+
+          <p>
+            Consistent visual branding for social media profiles,
+            helping businesses maintain a professional and recognizable
+            digital presence.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Why DesignKaro</small>
+
+        <h2>Design With Purpose</h2>
+
+      </div>
+
+      <div class="about-box">
+
+        <p>
+          Social media is often the first place where customers discover
+          a business. Professional visual communication can help your
+          brand present its products, services and ideas clearly.
+        </p>
+
+        <p>
+          DesignKaro Studio creates clean, modern and brand-focused
+          social media creatives for businesses across India.
+        </p>
+
+        <p>
+          Based in <strong>Gwalior, Madhya Pradesh</strong>, we work with
+          businesses and brands across India to create consistent digital
+          visuals for their online presence.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <small>Our Process</small>
+
+        <h2>From Idea To Creative</h2>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+
+          <span>STEP 01</span>
+
+          <h3>Discover</h3>
+
+          <p>
+            We understand your business, audience, content requirements
+            and brand style.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>STEP 02</span>
+
+          <h3>Plan</h3>
+
+          <p>
+            We plan the visual direction, layout, content hierarchy and
+            creative requirements.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>STEP 03</span>
+
+          <h3>Create</h3>
+
+          <p>
+            Professional social media creatives are designed according
+            to your brand identity.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <span>STEP 04</span>
+
+          <h3>Deliver</h3>
+
+          <p>
+            Final creatives are refined and delivered in suitable formats
+            for your social media platforms.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <h2>
+        Ready To Make Your Social Media Look Professional?
+      </h2>
+
+      <p>
+        Let's create professional social media designs that match your
+        brand and communicate your business clearly.
+      </p>
+
+      <div class="contact-buttons">
+
+        <a
+          href="https://wa.me/918376852307"
+          target="_blank"
+          class="btn whatsapp">
+          WhatsApp Us
+        </a>
+
+        <a
+          href="mailto:designkarostudio@gmail.com"
+          class="btn email-btn">
+          Email Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © 2026
+        <a href="index.html">DesignKaro Studio</a>.
+        All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE MENU -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
+    }
+
+  </script>
+
+</body>
+</html>
