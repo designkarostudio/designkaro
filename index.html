@@ -688,8 +688,97 @@ footer{
     }
 }
 
-</style>
+  /* ================= FAQ ================= */
 
+#faq {
+  padding: 90px 0;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 40px auto 0;
+}
+
+.faq-list details {
+  border-bottom: 1px solid #ddd;
+  padding: 22px 0;
+}
+
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list p {
+  margin: 15px 0 0;
+  line-height: 1.7;
+  color: #555;
+}
+  
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does DesignKaro Studio provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DesignKaro Studio provides graphic design, logo design, branding, social media design, digital marketing, SEO and web development services for businesses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide graphic design services in Gwalior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. DesignKaro Studio provides professional graphic design, branding, logo design and social media design services in Gwalior, Madhya Pradesh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide digital marketing services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide digital marketing solutions including SEO, social media marketing, online promotion and Google Business Profile optimization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide website development services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. DesignKaro Studio creates responsive, modern and SEO-friendly websites for businesses and professionals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact DesignKaro Studio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact DesignKaro Studio through WhatsApp or email to discuss your design, marketing or website requirements."
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 
@@ -1392,7 +1481,64 @@ checked and prepared for use.
 
 </section>
 
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="container">
 
+    <div class="eyebrow">FAQ</div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>What services does DesignKaro Studio provide?</summary>
+        <p>
+          DesignKaro Studio provides graphic design, logo design, branding,
+          social media design, digital marketing, SEO and web development
+          services for businesses.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you provide graphic design services in Gwalior?</summary>
+        <p>
+          Yes. DesignKaro Studio provides professional graphic design,
+          branding, logo design and social media design services in Gwalior,
+          Madhya Pradesh.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you provide digital marketing services?</summary>
+        <p>
+          Yes. We provide digital marketing solutions including SEO,
+          social media marketing, online promotion and Google Business
+          Profile optimization.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you provide website development services?</summary>
+        <p>
+          Yes. DesignKaro Studio creates responsive, modern and
+          SEO-friendly websites for businesses and professionals.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I contact DesignKaro Studio?</summary>
+        <p>
+          You can contact DesignKaro Studio through WhatsApp or email to
+          discuss your design, marketing or website requirements.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+  
 <!-- ================= CONTACT ================= -->
 
 <section id="contact">
@@ -1481,9 +1627,9 @@ Email
 
 
 <a
-href="mailto:designkarostudio@gmail.com">
+href="mailto:digitalcreator1803@gmail.com">
 
-designkarostudio@gmail.com
+digitalcreator1803@gmail.com
 
 </a>
 
