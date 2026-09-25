@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
@@ -24,6 +23,30 @@
 
   <url>
     <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/graphic-designer-gwalior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/logo-design-gwalior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/social-media-design-gwalior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/digital-marketing-gwalior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/seo-services-gwalior.html</loc>
+  </url>
+
+  <url>
+    <loc>https://designkarostudio.github.io/designkaro/web-development-gwalior.html</loc>
   </url>
 
 </urlset>
