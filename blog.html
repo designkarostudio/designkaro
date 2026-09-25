@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DesignKaro Studio Blog | Graphic Design & Digital Marketing</title>
+
+  <meta name="description" content="Read practical tips about graphic design, logo design, social media design, digital marketing and SEO for businesses in Gwalior and across India.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://designkarostudio.github.io/designkaro/blog.html">
+
+  <meta property="og:title" content="DesignKaro Studio Blog | Graphic Design & Digital Marketing">
+  <meta property="og:description" content="Practical tips about graphic design, branding, digital marketing and SEO for businesses.">
+  <meta property="og:url" content="https://designkarostudio.github.io/designkaro/blog.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: #f7f4ef;
+      color: #171717;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid #e4e0da;
+      background: #f7f4ef;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 155px;
+      height: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #4b006e;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #4b006e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 7vw, 78px);
+      line-height: 1.05;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 span {
+      color: #4b006e;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 25px auto 0;
+      color: #666;
+      font-size: 17px;
+    }
+
+    /* ================= BLOG ================= */
+
+    .blog-section {
+      padding: 30px 0 100px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: #666;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border: 1px solid #e5e1db;
+      border-radius: 18px;
+      padding: 30px;
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .blog-category {
+      color: #4b006e;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .blog-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .blog-card p {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .read-more {
+      margin-top: auto;
+      font-weight: 700;
+      color: #4b006e;
+      font-size: 14px;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      padding: 0 0 100px;
+    }
+
+    .cta-box {
+      background: #171717;
+      color: #fff;
+      border-radius: 22px;
+      padding: 55px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cta-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: #ccc;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .btn-light {
+      background: #fff;
+      color: #171717;
+    }
+
+    .btn-light:hover {
+      background: #eee;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      border-top: 1px solid #e4e0da;
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-inner p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .footer-email {
+      font-weight: 600;
+    }
+
+    .footer-email:hover {
+      color: #4b006e;
+    }
+
+    /* ================= WHATSAPP ================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #171717;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 800px) {
+
+      .nav {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 70px 0 55px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading h2 {
+        font-size: 34px;
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px;
+      }
+
+      .cta-box h2 {
+        font-size: 34px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- ================= BLOG SCHEMA ================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "DesignKaro Studio Blog",
+    "description": "Practical articles about graphic design, branding, digital marketing and SEO for businesses.",
+    "url": "https://designkarostudio.github.io/designkaro/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DesignKaro Studio",
+      "url": "https://designkarostudio.github.io/designkaro/"
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DesignKaro Studio Logo">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        DesignKaro Studio Blog
+      </div>
+
+      <h1>
+        Ideas That Help Your
+        <span>Business Grow.</span>
+      </h1>
+
+      <p>
+        Practical insights about graphic design, branding, social media,
+        digital marketing and SEO for businesses in Gwalior and across India.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= BLOG ARTICLES ================= -->
+
+  <section class="blog-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">
+          Latest Articles
+        </div>
+
+        <h2>
+          Design & Digital Marketing Insights
+        </h2>
+
+        <p>
+          Explore useful tips and practical ideas to build a stronger
+          brand and improve your online presence.
+        </p>
+
+      </div>
+
+
+      <div class="blog-grid">
+
+
+        <!-- BLOG 1 -->
+
+        <article class="blog-card">
+
+          <div class="blog-category">
+            Graphic Design
+          </div>
+
+          <h3>
+            How to Choose a Professional Logo for Your Business
+          </h3>
+
+          <p>
+            Learn what makes a professional logo effective and how the right
+            logo can help your business create a consistent brand identity.
+          </p>
+
+          <a href="blog-logo-design.html" class="read-more">
+            Read Article →
+          </a>
+
+        </article>
+
+
+        <!-- BLOG 2 -->
+
+        <article class="blog-card">
+
+          <div class="blog-category">
+            Local SEO
+          </div>
+
+          <h3>
+            Why Local Businesses Need Local SEO
+          </h3>
+
+          <p>
+            Discover how local SEO can help businesses improve their
+            visibility when potential customers search for services nearby.
+          </p>
+
+          <a href="blog-local-seo.html" class="read-more">
+            Read Article →
+          </a>
+
+        </article>
+
+
+        <!-- BLOG 3 -->
+
+        <article class="blog-card">
+
+          <div class="blog-category">
+            Social Media
+          </div>
+
+          <h3>
+            Social Media Design Tips for Small Businesses
+          </h3>
+
+          <p>
+            Learn simple design principles that can help small businesses
+            create more professional and consistent social media content.
+          </p>
+
+          <a href="blog-social-media-design.html" class="read-more">
+            Read Article →
+          </a>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <div class="cta-box">
+
+        <div>
+
+          <h2>
+            Need Help With Your Brand?
+          </h2>
+
+          <p>
+            Talk to DesignKaro Studio about graphic design,
+            digital marketing, SEO or website development.
+          </p>
+
+        </div>
+
+        <a
+          href="https://wa.me/918376852307"
+          target="_blank"
+          class="btn btn-light"
+        >
+          WhatsApp Me ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 DesignKaro Studio. All rights reserved.
+      </p>
+
+      <a
+        href="mailto:digitalcreator1803@gmail.com"
+        class="footer-email"
+      >
+        digitalcreator1803@gmail.com
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= WHATSAPP ================= -->
+
+  <a
+    href="https://wa.me/918376852307"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Contact DesignKaro Studio on WhatsApp"
+  >
+    WA
+  </a>
+
+</body>
+</html>
