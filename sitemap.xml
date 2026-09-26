@@ -1,66 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/</loc>
+       <loc>https://designkarostudio.github.io/designkaro/</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>1.0000</priority>
   </url>
-
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/logo-design.html</loc>
+       <loc>https://designkarostudio.github.io/designkaro/logo-design.html</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/social-media-design.html</loc>
+       <loc>https://designkarostudio.github.io/designkaro/social-media-design.html</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/digital-marketing.html</loc>
+       <loc>https://designkarostudio.github.io/designkaro/digital-marketing.html</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/seo-services.html</loc>
+       <loc>https://designkarostudio.github.io/designkaro/seo-services.html</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
   <url>
-    <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
+       <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
+       <lastmod>2026-09-25T12:53:54+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/graphic-designer-gwalior.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/logo-design-gwalior.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/social-media-design-gwalior.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/digital-marketing-gwalior.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/seo-services-gwalior.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/web-development-gwalior.html</loc>
-   <url>
-    <loc>https://designkarostudio.github.io/designkaro/blog.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/blog-logo-design.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/blog-local-seo.html</loc>
-  </url>
-
-  <url>
-    <loc>https://designkarostudio.github.io/designkaro/blog-social-media-design.html</loc>
-  </url>  </url>
-
 </urlset>
