@@ -1,35 +1,30 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/</loc>
   </url>
+
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/logo-design.html</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/logo-design.html</loc>
   </url>
+
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/social-media-design.html</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/social-media-design.html</loc>
   </url>
+
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/digital-marketing.html</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/digital-marketing.html</loc>
   </url>
+
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/seo-services.html</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/seo-services.html</loc>
   </url>
+
   <url>
-       <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
-       <lastmod>2026-09-26T08:40:35+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
   </url>
+
 </urlset>
+```
