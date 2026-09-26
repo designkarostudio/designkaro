@@ -1,30 +1,21 @@
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/</loc>
   </url>
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/logo-design.html</loc>
   </url>
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/social-media-design.html</loc>
   </url>
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/digital-marketing.html</loc>
   </url>
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/seo-services.html</loc>
   </url>
-
   <url>
     <loc>https://designkarostudio.github.io/designkaro/web-development.html</loc>
   </url>
-
 </urlset>
-```
