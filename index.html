@@ -1133,6 +1133,98 @@ footer{
     justify-content:space-between;
   }
 } 
+ /* ================================
+   PREMIUM STATS / COUNTER SECTION
+================================ */
+
+.dk-stats{
+  padding:35px 0;
+  background:#fff;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.dk-stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  align-items:center;
+}
+
+.dk-stat{
+  text-align:center;
+  padding:8px 25px;
+  position:relative;
+}
+
+.dk-stat:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:15%;
+  height:70%;
+  width:1px;
+  background:var(--line);
+}
+
+.dk-stat-number{
+  display:block;
+  color:var(--black);
+  font-family:"Playfair Display",serif;
+  font-size:clamp(32px,4vw,48px);
+  line-height:1;
+  font-weight:600;
+  letter-spacing:-1.5px;
+  margin-bottom:8px;
+}
+
+.dk-stat-number .plus{
+  color:var(--purple);
+}
+
+.dk-stat-label{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+  .dk-stats{
+    padding:28px 0;
+  }
+
+  .dk-stats-grid{
+    grid-template-columns:repeat(2,1fr);
+    row-gap:28px;
+  }
+
+  .dk-stat{
+    padding:5px 15px;
+  }
+
+  .dk-stat:nth-child(2)::after{
+    display:none;
+  }
+
+  .dk-stat:nth-child(1)::after,
+  .dk-stat:nth-child(3)::after{
+    top:10%;
+    height:80%;
+  }
+
+  .dk-stat-number{
+    font-size:34px;
+  }
+
+  .dk-stat-label{
+    font-size:9px;
+    letter-spacing:1px;
+  }
+} 
 </style>
 <script type="application/ld+json">
 {
@@ -1346,6 +1438,65 @@ One place for your digital brand.
 <!-- ================= ABOUT ================= -->
 
 <section
+<!-- HERO SECTION -->
+<section class="hero">
+
+   <!-- tumhara existing hero ka pura code -->
+
+</section>
+
+
+<!-- 👇 COUNTER YAHAN SE START HOGA -->
+
+<section class="dk-stats" aria-label="DesignKaro Studio achievements">
+
+  <div class="container">
+
+    <div class="dk-stats-grid">
+
+      <div class="dk-stat">
+        <span class="dk-stat-number">
+          <span class="counter" data-target="50">0</span><span class="plus">+</span>
+        </span>
+        <span class="dk-stat-label">Clients Served</span>
+      </div>
+
+      <div class="dk-stat">
+        <span class="dk-stat-number">
+          <span class="counter" data-target="100">0</span><span class="plus">+</span>
+        </span>
+        <span class="dk-stat-label">Projects Completed</span>
+      </div>
+
+      <div class="dk-stat">
+        <span class="dk-stat-number">
+          <span class="counter" data-target="10">0</span><span class="plus">+</span>
+        </span>
+        <span class="dk-stat-label">Creative Services</span>
+      </div>
+
+      <div class="dk-stat">
+        <span class="dk-stat-number">
+          <span class="counter" data-target="3">0</span><span class="plus">+</span>
+        </span>
+        <span class="dk-stat-label">Years of Experience</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 👆 COUNTER YAHAN KHATAM -->
+
+
+
+<section id="about">
+
+   <!-- tumhara existing About code -->
+
+</section>
 class="about"
 id="about">
 
