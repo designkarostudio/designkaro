@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms & Conditions | DesignKaro Studio</title>
+
+  <meta name="description" content="Read the Terms & Conditions of DesignKaro Studio covering design services, payments, revisions, delivery, cancellations, refunds, intellectual property and website usage.">
+
+  <meta name="keywords" content="DesignKaro Studio Terms and Conditions, graphic design terms, website design terms, digital marketing terms, SEO terms, design services terms">
+
+  <meta name="author" content="DesignKaro Studio">
+
+  <link rel="canonical" href="https://designkarostudio.github.io/designkaro/terms-and-conditions.html">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #5b2a86;
+      --purple-light: #f0e8f6;
+      --text: #19171c;
+      --bg: #fbfaf7;
+      --white: #ffffff;
+      --border: #e8e3eb;
+      --muted: #66616b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      width: 100%;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 155px;
+      height: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    .nav-btn {
+      background: var(--purple);
+      color: var(--white) !important;
+      padding: 10px 18px;
+      border-radius: 30px;
+    }
+
+    .nav-btn:hover {
+      background: #47206b;
+      transform: translateY(-1px);
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 25px 55px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--purple-light);
+      color: var(--purple);
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: 0.3px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: var(--purple);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .updated {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #817b84;
+    }
+
+    /* CONTENT */
+
+    .content-wrapper {
+      max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 25px;
+    }
+
+    .terms-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 50px;
+      box-shadow: 0 15px 45px rgba(25, 23, 28, 0.05);
+    }
+
+    .intro-box {
+      background: var(--purple-light);
+      border-left: 4px solid var(--purple);
+      padding: 22px 24px;
+      border-radius: 12px;
+      margin-bottom: 35px;
+    }
+
+    .intro-box strong {
+      color: var(--purple);
+    }
+
+    .terms-section {
+      margin-bottom: 38px;
+    }
+
+    .terms-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .terms-section h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .terms-section h2 span {
+      color: var(--purple);
+      margin-right: 8px;
+    }
+
+    .terms-section p {
+      color: #4f4a53;
+      margin-bottom: 12px;
+    }
+
+    .terms-section ul {
+      margin: 12px 0 0 22px;
+      color: #4f4a53;
+    }
+
+    .terms-section li {
+      margin-bottom: 8px;
+      padding-left: 5px;
+    }
+
+    .terms-section li::marker {
+      color: var(--purple);
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* CONTACT BOX */
+
+    .contact-box {
+      margin-top: 40px;
+      background: var(--text);
+      color: white;
+      padding: 32px;
+      border-radius: 18px;
+    }
+
+    .contact-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: #ddd9df;
+      margin-bottom: 8px;
+    }
+
+    .contact-box a {
+      color: white;
+      font-weight: 700;
+    }
+
+    .contact-box a:hover {
+      color: #d6b7ef;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--text);
+      color: white;
+      padding: 45px 25px 25px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 45px;
+    }
+
+    .footer-brand img {
+      width: 145px;
+      margin-bottom: 15px;
+      background: white;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
+    .footer-brand p {
+      color: #c8c4ca;
+      max-width: 360px;
+      font-size: 14px;
+    }
+
+    .footer-column h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #c8c4ca;
+      font-size: 14px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+    }
+
+    .footer-column a:hover {
+      color: white;
+      padding-left: 3px;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #343139;
+      color: #aaa5ad;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+
+      .nav-container {
+        padding: 13px 18px;
+      }
+
+      .logo img {
+        width: 125px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a:not(.nav-btn) {
+        display: none;
+      }
+
+      .nav-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 65px 20px 40px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .content-wrapper {
+        padding: 0 15px;
+      }
+
+      .terms-card {
+        padding: 28px 22px;
+        border-radius: 18px;
+      }
+
+      .terms-section h2 {
+        font-size: 23px;
+      }
+
+      .terms-section p,
+      .terms-section li {
+        font-size: 14px;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .contact-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="DesignKaro Studio Logo">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-badge">
+      Legal Information
+    </div>
+
+    <h1>
+      Terms & <span>Conditions</span>
+    </h1>
+
+    <p>
+      Please read these Terms & Conditions carefully before using
+      DesignKaro Studio's website or purchasing our services.
+    </p>
+
+    <div class="updated">
+      Last Updated: October 2026
+    </div>
+
+  </section>
+
+
+  <!-- CONTENT -->
+
+  <main class="content-wrapper">
+
+    <div class="terms-card">
+
+      <div class="intro-box">
+        <strong>Important:</strong>
+        By accessing this website, contacting DesignKaro Studio,
+        or purchasing any service from us, you acknowledge that
+        you have read, understood, and agreed to these Terms &
+        Conditions.
+      </div>
+
+
+      <!-- 01 -->
+
+      <section class="terms-section">
+
+        <h2><span>01.</span> About DesignKaro Studio</h2>
+
+        <p>
+          DesignKaro Studio provides creative and digital services
+          including graphic design, logo design, brand identity,
+          social media design, UI/UX design, website development,
+          digital marketing, SEO, Google Business Profile services,
+          promotional creatives and other related digital services.
+        </p>
+
+        <p>
+          These Terms & Conditions apply to all services provided
+          by DesignKaro Studio unless a separate written agreement
+          has been made with the client.
+        </p>
+
+      </section>
+
+
+      <!-- 02 -->
+
+      <section class="terms-section">
+
+        <h2><span>02.</span> Acceptance of Terms</h2>
+
+        <p>
+          By using our website or engaging our services, you agree
+          to comply with these Terms & Conditions.
+        </p>
+
+        <p>
+          If you do not agree with any part of these terms, please
+          do not use our website or purchase our services.
+        </p>
+
+      </section>
+
+
+      <!-- 03 -->
+
+      <section class="terms-section">
+
+        <h2><span>03.</span> Services</h2>
+
+        <p>
+          The exact scope of work will depend on the service
+          selected by the client and the requirements discussed
+          before the project begins.
+        </p>
+
+        <ul>
+          <li>Graphic Design & Creative Design</li>
+          <li>Logo Design & Brand Identity</li>
+          <li>Social Media Design</li>
+          <li>Website Design & Development</li>
+          <li>UI/UX Design</li>
+          <li>Digital Marketing</li>
+          <li>SEO Services</li>
+          <li>Google Business Profile Services</li>
+          <li>Marketing Creatives and Promotional Materials</li>
+          <li>Other customized digital services</li>
+        </ul>
+
+      </section>
+
+
+      <!-- 04 -->
+
+      <section class="terms-section">
+
+        <h2><span>04.</span> Project Requirements</h2>
+
+        <p>
+          Clients are responsible for providing accurate and
+          complete information, content, images, logos, brand
+          guidelines, credentials where necessary, and other
+          materials required for the project.
+        </p>
+
+        <p>
+          Delays caused by missing information, delayed approvals,
+          or late content submission may affect the project's
+          delivery timeline.
+        </p>
+
+      </section>
+
+
+      <!-- 05 -->
+
+      <section class="terms-section">
+
+        <h2><span>05.</span> Pricing & Payment</h2>
+
+        <p>
+          Service prices may vary depending on project complexity,
+          requirements, number of deliverables, timeline and
+          customization.
+        </p>
+
+        <ul>
+          <li>Payment terms will be communicated before starting the project.</li>
+          <li>Advance payment may be required before work begins.</li>
+          <li>Additional requirements outside the agreed scope may incur additional charges.</li>
+          <li>Work may be paused if agreed payments are not received on time.</li>
+          <li>Final files may be delivered after completion of the agreed payment.</li>
+        </ul>
+
+      </section>
+
+
+      <!-- 06 -->
+
+      <section class="terms-section">
+
+        <h2><span>06.</span> Revisions & Changes</h2>
+
+        <p>
+          Revision limits depend on the selected service or package.
+          Reasonable revisions within the agreed project scope may
+          be included.
+        </p>
+
+        <p>
+          Major changes, complete redesigns, new concepts, or
+          requirements outside the original brief may be treated
+          as additional work and may incur additional charges.
+        </p>
+
+      </section>
+
+
+      <!-- 07 -->
+
+      <section class="terms-section">
+
+        <h2><span>07.</span> Delivery Timeline</h2>
+
+        <p>
+          Estimated delivery timelines are communicated according
+          to the project scope.
+        </p>
+
+        <p>
+          Delivery may be delayed due to client-side delays,
+          additional revisions, changes in requirements,
+          technical issues, third-party services, or circumstances
+          beyond our reasonable control.
+        </p>
+
+      </section>
+
+
+      <!-- 08 -->
+
+      <section class="terms-section">
+
+        <h2><span>08.</span> Cancellation & Refunds</h2>
+
+        <p>
+          Cancellation and refund eligibility depends on the stage
+          of the project and the amount of work already completed.
+        </p>
+
+        <ul>
+          <li>Work that has already been completed may not be refundable.</li>
+          <li>Advance payments may be non-refundable once project work has started.</li>
+          <li>Third-party costs already paid on behalf of the client may not be refundable.</li>
+          <li>Any refund, where applicable, will be evaluated on a case-by-case basis.</li>
+        </ul>
+
+      </section>
+
+
+      <!-- 09 -->
+
+      <section class="terms-section">
+
+        <h2><span>09.</span> Intellectual Property</h2>
+
+        <p>
+          Ownership and usage rights for the final deliverables
+          will depend on the agreed service and payment terms.
+        </p>
+
+        <p>
+          Until full payment has been received, DesignKaro Studio
+          may retain ownership or usage rights over the project
+          files and may restrict their commercial use.
+        </p>
+
+        <p>
+          Third-party assets, fonts, stock images, plugins,
+          templates or software may be subject to their respective
+          licenses and terms.
+        </p>
+
+      </section>
+
+
+      <!-- 10 -->
+
+      <section class="terms-section">
+
+        <h2><span>10.</span> Portfolio & Promotional Use</h2>
+
+        <p>
+          Unless otherwise agreed in writing, DesignKaro Studio
+          may display completed work in its portfolio, website,
+          social media, presentations or promotional materials.
+        </p>
+
+        <p>
+          If a project is confidential or subject to a specific
+          confidentiality agreement, portfolio use will be handled
+          according to that agreement.
+        </p>
+
+      </section>
+
+
+      <!-- 11 -->
+
+      <section class="terms-section">
+
+        <h2><span>11.</span> Website Development</h2>
+
+        <p>
+          Website development services may include design,
+          development, responsive implementation, basic SEO
+          configuration and other agreed features.
+        </p>
+
+        <p>
+          Domain names, hosting, premium plugins, third-party
+          APIs, paid themes, email services and other external
+          services may require separate charges.
+        </p>
+
+        <p>
+          Ongoing maintenance, security updates and future
+          modifications are not automatically included unless
+          specifically agreed.
+        </p>
+
+      </section>
+
+
+      <!-- 12 -->
+
+      <section class="terms-section">
+
+        <h2><span>12.</span> SEO & Digital Marketing</h2>
+
+        <p>
+          SEO and digital marketing services are intended to
+          improve online visibility and marketing performance.
+        </p>
+
+        <p>
+          However, DesignKaro Studio does not guarantee specific
+          Google rankings, traffic levels, leads, sales, conversions
+          or business results because these may depend on search
+          engine algorithms, competition, market conditions,
+          advertising platforms and other external factors.
+        </p>
+
+      </section>
+
+
+      <!-- 13 -->
+
+      <section class="terms-section">
+
+        <h2><span>13.</span> Third-Party Platforms</h2>
+
+        <p>
+          Certain services may involve third-party platforms such
+          as Google, Instagram, Facebook, hosting providers,
+          domain registrars, payment providers or other external
+          services.
+        </p>
+
+        <p>
+          DesignKaro Studio is not responsible for outages,
+          policy changes, account restrictions, algorithm changes,
+          suspension, data loss or other issues caused by
+          third-party platforms.
+        </p>
+
+      </section>
+
+
+      <!-- 14 -->
+
+      <section class="terms-section">
+
+        <h2><span>14.</span> Client Responsibilities</h2>
+
+        <p>
+          The client is responsible for ensuring that all content,
+          images, logos, text, trademarks and other materials
+          supplied to DesignKaro Studio are legally authorized
+          for use.
+        </p>
+
+        <p>
+          The client remains responsible for the accuracy,
+          legality and ownership of the information and materials
+          supplied for the project.
+        </p>
+
+      </section>
+
+
+      <!-- 15 -->
+
+      <section class="terms-section">
+
+        <h2><span>15.</span> Limitation of Liability</h2>
+
+        <p>
+          DesignKaro Studio will make reasonable efforts to provide
+          professional services, but cannot guarantee uninterrupted
+          operation of third-party platforms or services.
+        </p>
+
+        <p>
+          DesignKaro Studio shall not be responsible for indirect,
+          incidental or consequential losses arising from the use
+          of our services or third-party platforms.
+        </p>
+
+      </section>
+
+
+      <!-- 16 -->
+
+      <section class="terms-section">
+
+        <h2><span>16.</span> Website Content</h2>
+
+        <p>
+          The content, graphics, branding, text and other materials
+          available on this website are provided for informational
+          and promotional purposes.
+        </p>
+
+        <p>
+          Unauthorized copying, reproduction, modification or
+          commercial use of website content or branding is not
+          permitted without prior written permission.
+        </p>
+
+      </section>
+
+
+      <!-- 17 -->
+
+      <section class="terms-section">
+
+        <h2><span>17.</span> Privacy</h2>
+
+        <p>
+          Any personal information shared with DesignKaro Studio
+          may be used only for legitimate business communication,
+          project execution, customer support and related purposes,
+          subject to applicable laws and our privacy practices.
+        </p>
+
+      </section>
+
+
+      <!-- 18 -->
+
+      <section class="terms-section">
+
+        <h2><span>18.</span> Changes to These Terms</h2>
+
+        <p>
+          DesignKaro Studio reserves the right to update or modify
+          these Terms & Conditions when necessary.
+        </p>
+
+        <p>
+          Updated terms will be published on this page with a
+          revised "Last Updated" date.
+        </p>
+
+      </section>
+
+
+      <!-- 19 -->
+
+      <section class="terms-section">
+
+        <h2><span>19.</span> Governing Law</h2>
+
+        <p>
+          These Terms & Conditions shall be interpreted and
+          governed in accordance with the applicable laws of India.
+        </p>
+
+        <p>
+          Any disputes shall be subject to the jurisdiction of
+          the appropriate courts in India.
+        </p>
+
+      </section>
+
+
+      <!-- 20 -->
+
+      <section class="terms-section">
+
+        <h2><span>20.</span> Contact Us</h2>
+
+        <p>
+          If you have any questions regarding these Terms &
+          Conditions, please contact DesignKaro Studio.
+        </p>
+
+      </section>
+
+
+      <!-- CONTACT -->
+
+      <div class="contact-box">
+
+        <h2>Need Clarification?</h2>
+
+        <p>
+          For questions about our services, payments, projects or
+          these Terms & Conditions, contact us directly.
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:digitalcreator1803@gmail.com">
+            digitalcreator1803@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Website:</strong>
+          <a href="index.html">
+            DesignKaro Studio
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <img src="assets/logo.png" alt="DesignKaro Studio">
+
+        <p>
+          DesignKaro Studio — Creative design and digital solutions
+          for brands, businesses and growing ideas.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>Legal</h3>
+
+        <a href="terms-and-conditions.html">
+          Terms & Conditions
+        </a>
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="refund-policy.html">
+          Refund Policy
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 DesignKaro Studio. All Rights Reserved.
+    </div>
+
+  </footer>
+
+</body>
+</html>
