@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,6 +22,7 @@
   "serviceType": [
     "Graphic Design",
     "Logo Design",
+    "Brand Identity",
     "Social Media Design",
     "Digital Marketing",
     "SEO",
@@ -28,37 +31,88 @@
   ]
 }
 </script>
+
 <meta charset="UTF-8">
 
-<meta name="google-site-verification" content="6Eo8JRw-TEtaDt0J_RRxA8ncrW1vKVFAofaCtmH9k7A">
+<meta
+  name="google-site-verification"
+  content="6Eo8JRw-TEtaDt0J_RRxA8ncrW1vKVFAofaCtmH9k7A"
+>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
 
-<title>DesignKaro Studio | Graphic Design, Digital Marketing & Web Development</title>
+<title>
+DesignKaro Studio | Graphic Design, Digital Marketing & Web Development
+</title>
 
-<meta name="description" content="DesignKaro Studio provides professional graphic design, logo design, branding, social media design, digital marketing, SEO and web development services for businesses across India.">
-<meta name="robots" content="index, follow">
+<meta
+  name="description"
+  content="DesignKaro Studio provides professional graphic design, logo design, branding, social media design, digital marketing, SEO and web development services for businesses across India."
+>
 
-<link rel="canonical" href="https://designkarostudio.github.io/designkaro/">
+<meta
+  name="robots"
+  content="index, follow"
+>
 
-<meta property="og:title" content="DesignKaro Studio | Graphic Design & Digital Marketing">
+<link
+  rel="canonical"
+  href="https://designkarostudio.github.io/designkaro/"
+>
 
-<meta property="og:description" content="Graphic design, branding, digital marketing, SEO and web development services by DesignKaro Studio.">
+<meta
+  property="og:title"
+  content="DesignKaro Studio | Graphic Design & Digital Marketing"
+>
 
-<meta property="og:url" content="https://designkarostudio.github.io/designkaro/">
+<meta
+  property="og:description"
+  content="Graphic design, branding, digital marketing, SEO and web development services by DesignKaro Studio."
+>
 
-<meta property="og:type" content="website">
+<meta
+  property="og:url"
+  content="https://designkarostudio.github.io/designkaro/"
+>
 
-<meta property="og:site_name" content="DesignKaro Studio">
+<meta
+  property="og:type"
+  content="website"
+>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta
+  property="og:site_name"
+  content="DesignKaro Studio"
+>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+  rel="stylesheet"
+>
 
 
 <style>
+
+/* ================= ROOT ================= */
 
 :root{
     --bg:#fbfaf7;
@@ -70,6 +124,9 @@
     --purple:#5b2a86;
     --purple-light:#f0e8f6;
 }
+
+
+/* ================= RESET ================= */
 
 *{
     margin:0;
@@ -549,7 +606,61 @@ section{
 }
 
 
-/* ================= FOOTER ================= */
+/* ================= FAQ ================= */
+
+#faq{
+    padding:90px 0;
+    background:var(--bg);
+}
+
+#faq h2{
+    font-family:"Playfair Display",serif;
+    font-size:clamp(40px,5vw,58px);
+    line-height:1;
+}
+
+.faq-list{
+    max-width:850px;
+    margin:40px auto 0;
+}
+
+.faq-list details{
+    border-bottom:1px solid #ddd;
+    padding:22px 0;
+}
+
+.faq-list summary{
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    list-style:none;
+    position:relative;
+    padding-right:30px;
+}
+
+.faq-list summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-list summary::after{
+    content:"+";
+    position:absolute;
+    right:0;
+    font-size:24px;
+}
+
+.faq-list details[open] summary::after{
+    content:"−";
+}
+
+.faq-list p{
+    margin:15px 0 0;
+    line-height:1.7;
+    color:#555;
+}
+
+
+/* ================= OLD FOOTER BASE ================= */
 
 footer{
     background:var(--black);
@@ -591,7 +702,421 @@ footer{
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= PREMIUM FOOTER ================= */
+
+.dk-footer{
+    background:#19171c;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    margin-top:80px;
+}
+
+.dk-footer::before{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:rgba(91,42,134,.18);
+    filter:blur(80px);
+    top:-220px;
+    right:-120px;
+    pointer-events:none;
+}
+
+.dk-footer::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(91,42,134,.10);
+    filter:blur(70px);
+    bottom:-180px;
+    left:-100px;
+    pointer-events:none;
+}
+
+.dk-footer-inner{
+    position:relative;
+    z-index:2;
+}
+
+
+/* ================= FOOTER CTA ================= */
+
+.dk-footer-cta{
+    padding:75px 0 65px;
+    border-bottom:1px solid rgba(255,255,255,.10);
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.dk-footer-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    color:#cdb6df;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.dk-footer-kicker span{
+    width:7px;
+    height:7px;
+    background:#5b2a86;
+    border-radius:50%;
+    display:inline-block;
+    box-shadow:0 0 0 5px rgba(91,42,134,.15);
+}
+
+.dk-footer-title{
+    margin:0;
+    max-width:720px;
+    font-family:"Playfair Display",serif;
+    font-size:clamp(38px,5vw,68px);
+    line-height:1.02;
+    font-weight:500;
+    letter-spacing:-2px;
+}
+
+.dk-footer-title em{
+    color:#c9aee0;
+    font-style:italic;
+}
+
+.dk-footer-cta-right{
+    flex-shrink:0;
+}
+
+.dk-footer-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    background:#5b2a86;
+    color:#fff!important;
+    padding:17px 23px;
+    border-radius:100px;
+    font-size:13px;
+    font-weight:700;
+    transition:.3s ease;
+    box-shadow:0 12px 35px rgba(91,42,134,.25);
+}
+
+.dk-footer-btn:hover{
+    transform:translateY(-4px);
+    background:#6d35a0;
+    box-shadow:0 18px 40px rgba(91,42,134,.35);
+}
+
+.dk-footer-btn-arrow{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#fff;
+    color:#5b2a86;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+}
+
+
+/* ================= FOOTER MAIN ================= */
+
+.dk-footer-main{
+    padding:60px 0 55px;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1.15fr;
+    gap:55px;
+}
+
+
+/* ================= FOOTER BRAND ================= */
+
+.dk-footer-brand{
+    max-width:330px;
+}
+
+.dk-footer-logo{
+    display:inline-flex;
+    align-items:center;
+    margin-bottom:22px;
+}
+
+.dk-footer-logo img{
+    width:145px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.dk-footer-description{
+    color:#aaa4ae;
+    font-size:13px;
+    line-height:1.8;
+    margin:0 0 25px;
+}
+
+.dk-footer-tagline{
+    color:#fff;
+    font-family:"Playfair Display",serif;
+    font-size:19px;
+    font-style:italic;
+}
+
+
+/* ================= FOOTER HEADINGS ================= */
+
+.dk-footer-heading{
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    margin:5px 0 23px;
+}
+
+
+/* ================= FOOTER LINKS ================= */
+
+.dk-footer-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.dk-footer-list li{
+    margin:0 0 13px;
+}
+
+.dk-footer-list a{
+    color:#aaa4ae;
+    text-decoration:none;
+    font-size:13px;
+    transition:.25s ease;
+    position:relative;
+}
+
+.dk-footer-list a:hover{
+    color:#fff;
+    padding-left:7px;
+}
+
+.dk-footer-list a::before{
+    content:"";
+    position:absolute;
+    left:-7px;
+    top:50%;
+    width:0;
+    height:1px;
+    background:#c9aee0;
+    transition:.25s ease;
+}
+
+.dk-footer-list a:hover::before{
+    width:4px;
+}
+
+
+/* ================= FOOTER CONTACT ================= */
+
+.dk-footer-contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    margin-bottom:19px;
+}
+
+.dk-footer-contact-icon{
+    width:34px;
+    height:34px;
+    min-width:34px;
+    border:1px solid rgba(255,255,255,.13);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    color:#d8c6e4;
+}
+
+.dk-footer-contact-content{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.dk-footer-contact-label{
+    color:#77727b;
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    font-weight:700;
+}
+
+.dk-footer-contact-content a,
+.dk-footer-contact-content span{
+    color:#ddd9df;
+    font-size:12px;
+    line-height:1.5;
+    text-decoration:none;
+}
+
+.dk-footer-contact-content a:hover{
+    color:#c9aee0;
+}
+
+
+/* ================= FOOTER SOCIAL ================= */
+
+.dk-footer-social{
+    display:flex;
+    gap:9px;
+    margin-top:24px;
+}
+
+.dk-footer-social a{
+    width:38px;
+    height:38px;
+    border:1px solid rgba(255,255,255,.13);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:700;
+    transition:.3s ease;
+}
+
+.dk-footer-social a:hover{
+    background:#5b2a86;
+    border-color:#5b2a86;
+    transform:translateY(-3px);
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.dk-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.10);
+    padding:20px 0;
+}
+
+.dk-footer-bottom-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.dk-footer-copy{
+    color:#77727b;
+    font-size:11px;
+}
+
+.dk-footer-legal{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+.dk-footer-legal a{
+    color:#89838d;
+    text-decoration:none;
+    font-size:11px;
+    transition:.2s ease;
+}
+
+.dk-footer-legal a:hover{
+    color:#fff;
+}
+
+
+/* ================= STATS / COUNTER ================= */
+
+.dk-stats{
+    padding:35px 0;
+    background:#fff;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.dk-stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    align-items:center;
+}
+
+.dk-stat{
+    text-align:center;
+    padding:8px 25px;
+    position:relative;
+}
+
+.dk-stat:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:15%;
+    height:70%;
+    width:1px;
+    background:var(--line);
+}
+
+.dk-stat-number{
+    display:block;
+    color:var(--black);
+    font-family:"Playfair Display",serif;
+    font-size:clamp(32px,4vw,48px);
+    line-height:1;
+    font-weight:600;
+    letter-spacing:-1.5px;
+    margin-bottom:8px;
+}
+
+.dk-stat-number .plus{
+    color:var(--purple);
+}
+
+.dk-stat-label{
+    display:block;
+    color:var(--muted);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .dk-footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:45px 35px;
+    }
+
+    .dk-footer-brand{
+        max-width:100%;
+    }
+
+    .dk-footer-cta{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+}
+
 
 @media(max-width:900px){
 
@@ -626,10 +1151,85 @@ footer{
         border-top:1px solid rgba(91,42,134,.18);
         padding:25px 0 0;
     }
+
 }
 
 
-@media(max-width:600px){
+@media(max-width:700px){
+
+    .dk-stats{
+        padding:28px 0;
+    }
+
+    .dk-stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        row-gap:28px;
+    }
+
+    .dk-stat{
+        padding:5px 15px;
+    }
+
+    .dk-stat:nth-child(2)::after{
+        display:none;
+    }
+
+    .dk-stat:nth-child(1)::after,
+    .dk-stat:nth-child(3)::after{
+        top:10%;
+        height:80%;
+    }
+
+    .dk-stat-number{
+        font-size:34px;
+    }
+
+    .dk-stat-label{
+        font-size:9px;
+        letter-spacing:1px;
+    }
+
+    .dk-footer{
+        margin-top:55px;
+    }
+
+    .dk-footer-cta{
+        padding:55px 0 45px;
+        gap:28px;
+    }
+
+    .dk-footer-title{
+        font-size:42px;
+        letter-spacing:-1.2px;
+    }
+
+    .dk-footer-main{
+        grid-template-columns:1fr 1fr;
+        gap:40px 22px;
+        padding:45px 0;
+    }
+
+    .dk-footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .dk-footer-logo img{
+        width:130px;
+    }
+
+    .dk-footer-bottom-inner{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+
+    .dk-footer-legal{
+        gap:12px 18px;
+    }
+
+}
+
+
+@media(max-width:650px){
 
     .nav{
         height:72px;
@@ -686,546 +1286,36 @@ footer{
         right:14px;
         bottom:14px;
     }
+
 }
 
-  /* ================= FAQ ================= */
-
-#faq {
-  padding: 90px 0;
-}
-
-.faq-list {
-  max-width: 850px;
-  margin: 40px auto 0;
-}
-
-.faq-list details {
-  border-bottom: 1px solid #ddd;
-  padding: 22px 0;
-}
-
-.faq-list summary {
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  padding-right: 30px;
-}
-
-.faq-list summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  font-size: 24px;
-}
-
-.faq-list details[open] summary::after {
-  content: "−";
-}
-
-.faq-list p {
-  margin: 15px 0 0;
-  line-height: 1.7;
-  color: #555;
-}
- /* ================================
-   PREMIUM DESIGNKARO FOOTER
-================================ */
-
-.dk-footer{
-  background:#19171c;
-  color:#fff;
-  position:relative;
-  overflow:hidden;
-  margin-top:80px;
-}
-
-/* Purple glow */
-.dk-footer::before{
-  content:"";
-  position:absolute;
-  width:420px;
-  height:420px;
-  border-radius:50%;
-  background:rgba(91,42,134,.18);
-  filter:blur(80px);
-  top:-220px;
-  right:-120px;
-  pointer-events:none;
-}
-
-.dk-footer::after{
-  content:"";
-  position:absolute;
-  width:300px;
-  height:300px;
-  border-radius:50%;
-  background:rgba(91,42,134,.10);
-  filter:blur(70px);
-  bottom:-180px;
-  left:-100px;
-  pointer-events:none;
-}
-
-.dk-footer-inner{
-  position:relative;
-  z-index:2;
-}
-
-/* TOP CTA */
-.dk-footer-cta{
-  padding:75px 0 65px;
-  border-bottom:1px solid rgba(255,255,255,.10);
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  gap:40px;
-}
-
-.dk-footer-kicker{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  color:#cdb6df;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  margin-bottom:18px;
-}
-
-.dk-footer-kicker span{
-  width:7px;
-  height:7px;
-  background:#5b2a86;
-  border-radius:50%;
-  display:inline-block;
-  box-shadow:0 0 0 5px rgba(91,42,134,.15);
-}
-
-.dk-footer-title{
-  margin:0;
-  max-width:720px;
-  font-family:"Playfair Display",serif;
-  font-size:clamp(38px,5vw,68px);
-  line-height:1.02;
-  font-weight:500;
-  letter-spacing:-2px;
-}
-
-.dk-footer-title em{
-  color:#c9aee0;
-  font-style:italic;
-}
-
-.dk-footer-cta-right{
-  flex-shrink:0;
-}
-
-.dk-footer-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:14px;
-  background:#5b2a86;
-  color:#fff !important;
-  text-decoration:none;
-  padding:17px 23px;
-  border-radius:100px;
-  font-size:13px;
-  font-weight:700;
-  transition:.3s ease;
-  box-shadow:0 12px 35px rgba(91,42,134,.25);
-}
-
-.dk-footer-btn:hover{
-  transform:translateY(-4px);
-  background:#6d35a0;
-  box-shadow:0 18px 40px rgba(91,42,134,.35);
-}
-
-.dk-footer-btn-arrow{
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  background:#fff;
-  color:#5b2a86;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:16px;
-}
-
-/* MAIN FOOTER */
-.dk-footer-main{
-  padding:60px 0 55px;
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr 1.15fr;
-  gap:55px;
-}
-
-/* BRAND */
-.dk-footer-brand{
-  max-width:330px;
-}
-
-.dk-footer-logo{
-  display:inline-flex;
-  align-items:center;
-  margin-bottom:22px;
-}
-
-.dk-footer-logo img{
-  width:145px;
-  height:auto;
-  display:block;
-  object-fit:contain;
-  filter:none;
-}
-
-.dk-footer-description{
-  color:#aaa4ae;
-  font-size:13px;
-  line-height:1.8;
-  margin:0 0 25px;
-}
-
-.dk-footer-tagline{
-  color:#fff;
-  font-family:"Playfair Display",serif;
-  font-size:19px;
-  font-style:italic;
-}
-
-/* HEADINGS */
-.dk-footer-heading{
-  color:#fff;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:1.4px;
-  text-transform:uppercase;
-  margin:5px 0 23px;
-}
-
-/* LINKS */
-.dk-footer-list{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.dk-footer-list li{
-  margin:0 0 13px;
-}
-
-.dk-footer-list a{
-  color:#aaa4ae;
-  text-decoration:none;
-  font-size:13px;
-  transition:.25s ease;
-  position:relative;
-}
-
-.dk-footer-list a:hover{
-  color:#fff;
-  padding-left:7px;
-}
-
-.dk-footer-list a::before{
-  content:"";
-  position:absolute;
-  left:-7px;
-  top:50%;
-  width:0;
-  height:1px;
-  background:#c9aee0;
-  transition:.25s ease;
-}
-
-.dk-footer-list a:hover::before{
-  width:4px;
-}
-
-/* CONTACT */
-.dk-footer-contact-item{
-  display:flex;
-  align-items:flex-start;
-  gap:13px;
-  margin-bottom:19px;
-}
-
-.dk-footer-contact-icon{
-  width:34px;
-  height:34px;
-  min-width:34px;
-  border:1px solid rgba(255,255,255,.13);
-  border-radius:10px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:14px;
-  color:#d8c6e4;
-}
-
-.dk-footer-contact-content{
-  display:flex;
-  flex-direction:column;
-  gap:4px;
-}
-
-.dk-footer-contact-label{
-  color:#77727b;
-  font-size:9px;
-  text-transform:uppercase;
-  letter-spacing:1.2px;
-  font-weight:700;
-}
-
-.dk-footer-contact-content a,
-.dk-footer-contact-content span{
-  color:#ddd9df;
-  font-size:12px;
-  line-height:1.5;
-  text-decoration:none;
-}
-
-.dk-footer-contact-content a:hover{
-  color:#c9aee0;
-}
-
-/* SOCIAL */
-.dk-footer-social{
-  display:flex;
-  gap:9px;
-  margin-top:24px;
-}
-
-.dk-footer-social a{
-  width:38px;
-  height:38px;
-  border:1px solid rgba(255,255,255,.13);
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  text-decoration:none;
-  font-size:12px;
-  font-weight:700;
-  transition:.3s ease;
-}
-
-.dk-footer-social a:hover{
-  background:#5b2a86;
-  border-color:#5b2a86;
-  transform:translateY(-3px);
-}
-
-/* BOTTOM */
-.dk-footer-bottom{
-  border-top:1px solid rgba(255,255,255,.10);
-  padding:20px 0;
-}
-
-.dk-footer-bottom-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-
-.dk-footer-copy{
-  color:#77727b;
-  font-size:11px;
-}
-
-.dk-footer-legal{
-  display:flex;
-  gap:22px;
-  flex-wrap:wrap;
-}
-
-.dk-footer-legal a{
-  color:#89838d;
-  text-decoration:none;
-  font-size:11px;
-  transition:.2s ease;
-}
-
-.dk-footer-legal a:hover{
-  color:#fff;
-}
-
-/* RESPONSIVE */
-@media(max-width:1000px){
-
-  .dk-footer-main{
-    grid-template-columns:1fr 1fr;
-    gap:45px 35px;
-  }
-
-  .dk-footer-brand{
-    max-width:100%;
-  }
-
-  .dk-footer-cta{
-    align-items:flex-start;
-    flex-direction:column;
-  }
-}
-
-@media(max-width:650px){
-
-  .dk-footer{
-    margin-top:55px;
-  }
-
-  .dk-footer-cta{
-    padding:55px 0 45px;
-    gap:28px;
-  }
-
-  .dk-footer-title{
-    font-size:42px;
-    letter-spacing:-1.2px;
-  }
-
-  .dk-footer-main{
-    grid-template-columns:1fr 1fr;
-    gap:40px 22px;
-    padding:45px 0;
-  }
-
-  .dk-footer-brand{
-    grid-column:1 / -1;
-  }
-
-  .dk-footer-logo img{
-    width:130px;
-  }
-
-  .dk-footer-bottom-inner{
-    align-items:flex-start;
-    flex-direction:column;
-  }
-
-  .dk-footer-legal{
-    gap:12px 18px;
-  }
-}
 
 @media(max-width:430px){
 
-  .dk-footer-main{
-    grid-template-columns:1fr;
-  }
+    .dk-footer-main{
+        grid-template-columns:1fr;
+    }
 
-  .dk-footer-brand{
-    grid-column:auto;
-  }
+    .dk-footer-brand{
+        grid-column:auto;
+    }
 
-  .dk-footer-title{
-    font-size:37px;
-  }
+    .dk-footer-title{
+        font-size:37px;
+    }
 
-  .dk-footer-btn{
-    width:100%;
-    justify-content:space-between;
-  }
-} 
- /* ================================
-   PREMIUM STATS / COUNTER SECTION
-================================ */
+    .dk-footer-btn{
+        width:100%;
+        justify-content:space-between;
+    }
 
-.dk-stats{
-  padding:35px 0;
-  background:#fff;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
 }
 
-.dk-stats-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  align-items:center;
-}
-
-.dk-stat{
-  text-align:center;
-  padding:8px 25px;
-  position:relative;
-}
-
-.dk-stat:not(:last-child)::after{
-  content:"";
-  position:absolute;
-  right:0;
-  top:15%;
-  height:70%;
-  width:1px;
-  background:var(--line);
-}
-
-.dk-stat-number{
-  display:block;
-  color:var(--black);
-  font-family:"Playfair Display",serif;
-  font-size:clamp(32px,4vw,48px);
-  line-height:1;
-  font-weight:600;
-  letter-spacing:-1.5px;
-  margin-bottom:8px;
-}
-
-.dk-stat-number .plus{
-  color:var(--purple);
-}
-
-.dk-stat-label{
-  display:block;
-  color:var(--muted);
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:1.3px;
-  text-transform:uppercase;
-}
-
-/* Mobile */
-@media(max-width:700px){
-
-  .dk-stats{
-    padding:28px 0;
-  }
-
-  .dk-stats-grid{
-    grid-template-columns:repeat(2,1fr);
-    row-gap:28px;
-  }
-
-  .dk-stat{
-    padding:5px 15px;
-  }
-
-  .dk-stat:nth-child(2)::after{
-    display:none;
-  }
-
-  .dk-stat:nth-child(1)::after,
-  .dk-stat:nth-child(3)::after{
-    top:10%;
-    height:80%;
-  }
-
-  .dk-stat-number{
-    font-size:34px;
-  }
-
-  .dk-stat-label{
-    font-size:9px;
-    letter-spacing:1px;
-  }
-} 
 </style>
+
+
+<!-- ================= FAQ SCHEMA ================= -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1274,6 +1364,7 @@ footer{
   ]
 }
 </script>
+
 </head>
 
 
@@ -1286,12 +1377,16 @@ footer{
 
 <div class="container nav">
 
-<a href="#home" aria-label="DesignKaro Studio Home">
+<a
+href="#home"
+aria-label="DesignKaro Studio Home"
+>
 
 <img
 src="assets/logo.png"
 class="logo"
-alt="DesignKaro Studio logo">
+alt="DesignKaro Studio logo"
+>
 
 </a>
 
@@ -1306,7 +1401,10 @@ alt="DesignKaro Studio logo">
 
 <a href="#process">Process</a>
 
-<a href="#contact" class="nav-button">
+<a
+href="#contact"
+class="nav-button"
+>
 Let's Talk
 </a>
 
@@ -1316,10 +1414,9 @@ Let's Talk
 <button
 class="menu"
 onclick="toggleMenu()"
-aria-label="Open navigation menu">
-
+aria-label="Open navigation menu"
+>
 ☰
-
 </button>
 
 </div>
@@ -1329,7 +1426,10 @@ aria-label="Open navigation menu">
 
 <!-- ================= HERO ================= -->
 
-<section class="hero" id="home">
+<section
+class="hero"
+id="home"
+>
 
 <div class="container hero-grid">
 
@@ -1342,17 +1442,16 @@ Graphic Design & Digital Marketing
 
 
 <h1>
-
 Graphic Design & <span>Digital Marketing Agency in Gwalior.</span>
-
 </h1>
 
 
 <p class="hero-text">
 
-DesignKaro Studio is a graphic design and digital marketing agency, helping businesses across India with logo design,
-branding, social media design, SEO, digital marketing and professional web development.
-
+DesignKaro Studio is a graphic design and digital marketing agency,
+helping businesses across India with logo design, branding,
+social media design, SEO, digital marketing and professional
+web development.
 
 </p>
 
@@ -1361,19 +1460,17 @@ branding, social media design, SEO, digital marketing and professional web devel
 
 <a
 href="#contact"
-class="btn btn-dark">
-
+class="btn btn-dark"
+>
 Start a Project ↗
-
 </a>
 
 
 <a
 href="#services"
-class="btn btn-light">
-
+class="btn btn-light"
+>
 View Services
-
 </a>
 
 </div>
@@ -1433,50 +1530,121 @@ One place for your digital brand.
 </div>
 
 </section>
+
+
 <!-- ================= STATS ================= -->
 
-<section class="dk-stats" aria-label="DesignKaro Studio achievements">
+<section
+class="dk-stats"
+aria-label="DesignKaro Studio achievements"
+>
 
-  <div class="container">
+<div class="container">
 
-    <div class="dk-stats-grid">
+<div class="dk-stats-grid">
 
-      <div class="dk-stat">
-        <span class="dk-stat-number">
-          <span class="counter" data-target="50">0</span><span class="plus">+</span>
-        </span>
-        <span class="dk-stat-label">Clients Served</span>
-      </div>
 
-      <div class="dk-stat">
-        <span class="dk-stat-number">
-          <span class="counter" data-target="100">0</span><span class="plus">+</span>
-        </span>
-        <span class="dk-stat-label">Projects Completed</span>
-      </div>
+<div class="dk-stat">
 
-      <div class="dk-stat">
-        <span class="dk-stat-number">
-          <span class="counter" data-target="10">0</span><span class="plus">+</span>
-        </span>
-        <span class="dk-stat-label">Creative Services</span>
-      </div>
+<span class="dk-stat-number">
 
-      <div class="dk-stat">
-        <span class="dk-stat-number">
-          <span class="counter" data-target="3">0</span><span class="plus">+</span>
-        </span>
-        <span class="dk-stat-label">Years Experience</span>
-      </div>
+<span
+class="counter"
+data-target="50"
+>
+0
+</span>
 
-    </div>
+<span class="plus">+</span>
 
-  </div>
+</span>
+
+<span class="dk-stat-label">
+Clients Served
+</span>
+
+</div>
+
+
+<div class="dk-stat">
+
+<span class="dk-stat-number">
+
+<span
+class="counter"
+data-target="100"
+>
+0
+</span>
+
+<span class="plus">+</span>
+
+</span>
+
+<span class="dk-stat-label">
+Projects Completed
+</span>
+
+</div>
+
+
+<div class="dk-stat">
+
+<span class="dk-stat-number">
+
+<span
+class="counter"
+data-target="10"
+>
+0
+</span>
+
+<span class="plus">+</span>
+
+</span>
+
+<span class="dk-stat-label">
+Creative Services
+</span>
+
+</div>
+
+
+<div class="dk-stat">
+
+<span class="dk-stat-number">
+
+<span
+class="counter"
+data-target="3"
+>
+0
+</span>
+
+<span class="plus">+</span>
+
+</span>
+
+<span class="dk-stat-label">
+Years Experience
+</span>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
-<section class="about" id="about">
+<!-- ================= ABOUT ================= -->
+
+<section
+class="about"
+id="about"
+>
 
 <div class="container">
 
@@ -1501,7 +1669,6 @@ About DesignKaro Studio
 Explore professional graphic design, branding, social media design,
 digital marketing, SEO and web development services designed to help
 businesses build a stronger online presence.
-
 
 </p>
 
@@ -1540,7 +1707,6 @@ the focus stays on clarity, consistency and a polished brand image.
 
 </p>
 
-<p>  
 </div>
 
 
@@ -1599,11 +1765,13 @@ Responsive business websites
 
 </section>
 
+
 <!-- ================= SERVICES ================= -->
 
 <section
 class="services"
-id="services">
+id="services"
+>
 
 <div class="container">
 
@@ -1621,6 +1789,7 @@ Graphic Design & Digital Marketing Services
 
 </div>
 
+
 <p class="section-intro">
 
 Graphic design, digital marketing, SEO and web solutions
@@ -1634,7 +1803,10 @@ for businesses looking for a consistent digital presence.
 <div class="service-grid">
 
 
-<a href="logo-design.html" class="service">
+<a
+href="logo-design.html"
+class="service"
+>
 
 <div class="service-number">
 01 / BRANDING
@@ -1658,7 +1830,10 @@ Identity →
 </a>
 
 
-<a href="social-media-design.html" class="service">
+<a
+href="social-media-design.html"
+class="service"
+>
 
 <div class="service-number">
 02 / SOCIAL
@@ -1682,7 +1857,10 @@ Content →
 </a>
 
 
-<a href="digital-marketing.html" class="service">
+<a
+href="digital-marketing.html"
+class="service"
+>
 
 <div class="service-number">
 03 / MARKETING
@@ -1706,7 +1884,10 @@ Marketing →
 </a>
 
 
-<a href="seo-services.html" class="service">
+<a
+href="seo-services.html"
+class="service"
+>
 
 <div class="service-number">
 04 / SEO
@@ -1731,7 +1912,10 @@ Visibility →
 </a>
 
 
-<a href="web-development.html" class="service">
+<a
+href="web-development.html"
+class="service"
+>
 
 <div class="service-number">
 05 / WEB
@@ -1786,9 +1970,11 @@ Support →
 </section>
 
 
-<!-- ================= Why Choose DesignKaro Studio ================= -->
+<!-- ================= WHY CHOOSE DESIGNKARO ================= -->
 
-<section class="why">
+<section
+class="why"
+>
 
 <div class="container">
 
@@ -1880,7 +2066,8 @@ with a straightforward process and clear communication.
 
 <section
 class="process"
-id="process">
+id="process"
+>
 
 <div class="container">
 
@@ -1999,67 +2186,122 @@ checked and prepared for use.
 
 </section>
 
+
 <!-- ================= FAQ ================= -->
-<section id="faq">
-  <div class="container">
 
-    <div class="eyebrow">FAQ</div>
+<section
+id="faq"
+>
 
-    <h2>Frequently Asked Questions</h2>
+<div class="container">
 
-    <div class="faq-list">
+<div class="eyebrow">
+FAQ
+</div>
 
-      <details>
-        <summary>What services does DesignKaro Studio provide?</summary>
-        <p>
-          DesignKaro Studio provides graphic design, logo design, branding,
-          social media design, digital marketing, SEO and web development
-          services for businesses.
-        </p>
-      </details>
+<h2>
+Frequently Asked Questions
+</h2>
 
-      <details>
-        <summary>Do you provide graphic design services in Gwalior?</summary>
-        <p>
-          Yes. DesignKaro Studio provides professional graphic design,
-          branding, logo design and social media design services in Gwalior,
-          Madhya Pradesh.
-        </p>
-      </details>
 
-      <details>
-        <summary>Do you provide digital marketing services?</summary>
-        <p>
-          Yes. We provide digital marketing solutions including SEO,
-          social media marketing, online promotion and Google Business
-          Profile optimization.
-        </p>
-      </details>
+<div class="faq-list">
 
-      <details>
-        <summary>Do you provide website development services?</summary>
-        <p>
-          Yes. DesignKaro Studio creates responsive, modern and
-          SEO-friendly websites for businesses and professionals.
-        </p>
-      </details>
 
-      <details>
-        <summary>How can I contact DesignKaro Studio?</summary>
-        <p>
-          You can contact DesignKaro Studio through WhatsApp or email to
-          discuss your design, marketing or website requirements.
-        </p>
-      </details>
+<details>
 
-    </div>
+<summary>
+What services does DesignKaro Studio provide?
+</summary>
 
-  </div>
+<p>
+
+DesignKaro Studio provides graphic design, logo design, branding,
+social media design, digital marketing, SEO and web development
+services for businesses.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you provide graphic design services in Gwalior?
+</summary>
+
+<p>
+
+Yes. DesignKaro Studio provides professional graphic design,
+branding, logo design and social media design services in Gwalior,
+Madhya Pradesh.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you provide digital marketing services?
+</summary>
+
+<p>
+
+Yes. We provide digital marketing solutions including SEO,
+social media marketing, online promotion and Google Business
+Profile optimization.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you provide website development services?
+</summary>
+
+<p>
+
+Yes. DesignKaro Studio creates responsive, modern and
+SEO-friendly websites for businesses and professionals.
+
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How can I contact DesignKaro Studio?
+</summary>
+
+<p>
+
+You can contact DesignKaro Studio through WhatsApp or email to
+discuss your design, marketing or website requirements.
+
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
 </section>
-  
+
+
 <!-- ================= CONTACT ================= -->
 
-<section id="contact">
+<section
+id="contact"
+>
 
 <div class="container">
 
@@ -2094,7 +2336,8 @@ design, marketing or web solution for your business.
 href="https://wa.me/918376852307"
 target="_blank"
 rel="noopener noreferrer"
-class="btn btn-dark">
+class="btn btn-dark"
+>
 
 WhatsApp Me ↗
 
@@ -2103,7 +2346,8 @@ WhatsApp Me ↗
 
 <a
 href="mailto:digitalcreator1803@gmail.com"
-class="btn btn-light">
+class="btn btn-light"
+>
 
 Email Me ↗
 
@@ -2128,7 +2372,8 @@ WhatsApp
 <a
 href="https://wa.me/918376852307"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener noreferrer"
+>
 
 +91 83768 52307
 
@@ -2145,7 +2390,8 @@ Email
 
 
 <a
-href="mailto:digitalcreator1803@gmail.com">
+href="mailto:digitalcreator1803@gmail.com"
+>
 
 digitalcreator1803@gmail.com
 
@@ -2190,289 +2436,394 @@ DesignKaro Studio
 </section>
 
 
-<!-- ================= FOOTER ================= -->
-
-<footer class="dk-footer">
-
-  <div class="container dk-footer-inner">
-
-    <!-- CTA -->
-    <div class="dk-footer-cta">
-
-      <div>
-        <div class="dk-footer-kicker">
-          <span></span>
-          DesignKaro Studio
-        </div>
-
-        <h2 class="dk-footer-title">
-          Let's build something<br>
-          <em>worth remembering.</em>
-        </h2>
-      </div>
-
-      <div class="dk-footer-cta-right">
-        <a
-          href="https://wa.me/918376852307"
-          class="dk-footer-btn"
-          target="_blank"
-          rel="noopener"
-        >
-          Start a Project
-          <span class="dk-footer-btn-arrow">↗</span>
-        </a>
-      </div>
+<!-- ================= PREMIUM FOOTER ================= -->
 
-    </div>
+<footer
+class="dk-footer"
+>
 
+<div class="container dk-footer-inner">
 
-    <!-- MAIN FOOTER -->
-    <div class="dk-footer-main">
 
-      <!-- BRAND -->
-      <div class="dk-footer-brand">
+<!-- FOOTER CTA -->
 
-        <a href="index.html" class="dk-footer-logo">
-          <img
-            src="assets/logo.png"
-            alt="DesignKaro Studio - Graphic Design and Digital Marketing"
-          >
-        </a>
+<div class="dk-footer-cta">
 
-        <p class="dk-footer-description">
-          DesignKaro Studio is a creative design and digital marketing studio
-          helping businesses build stronger brands through graphic design,
-          branding, social media, SEO, digital marketing and web development.
-        </p>
+<div>
 
-        <div class="dk-footer-tagline">
-          Design seedha, brand teekha.
-        </div>
+<div class="dk-footer-kicker">
 
-        <div class="dk-footer-social">
+<span></span>
 
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="DesignKaro Studio on Instagram"
-          >IG</a>
+DesignKaro Studio
 
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="DesignKaro Studio on LinkedIn"
-          >IN</a>
-
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener"
-            aria-label="DesignKaro Studio on Facebook"
-          >FB</a>
+</div>
 
-          <a
-            href="https://wa.me/918376852307"
-            target="_blank"
-            rel="noopener"
-            aria-label="Contact DesignKaro Studio on WhatsApp"
-          >WA</a>
 
-        </div>
+<h2 class="dk-footer-title">
 
-      </div>
+Let's build something<br>
 
+<em>
+worth remembering.
+</em>
 
-      <!-- EXPLORE -->
-      <div>
+</h2>
 
-        <h3 class="dk-footer-heading">Explore</h3>
+</div>
 
-        <ul class="dk-footer-list">
 
-          <li>
-            <a href="index.html">Home</a>
-          </li>
+<div class="dk-footer-cta-right">
 
-          <li>
-            <a href="#about">About DesignKaro</a>
-          </li>
+<a
+href="https://wa.me/918376852307"
+class="dk-footer-btn"
+target="_blank"
+rel="noopener noreferrer"
+>
 
-          <li>
-            <a href="#services">Our Services</a>
-          </li>
+Start a Project
 
-          <li>
-            <a href="#process">Our Process</a>
-          </li>
+<span class="dk-footer-btn-arrow">
+↗
+</span>
 
-          <li>
-            <a href="#faq">FAQs</a>
-          </li>
+</a>
 
-          <li>
-            <a href="#contact">Contact Us</a>
-          </li>
+</div>
 
-        </ul>
+</div>
 
-      </div>
 
+<!-- FOOTER MAIN -->
 
-      <!-- SERVICES -->
-      <div>
+<div class="dk-footer-main">
 
-        <h3 class="dk-footer-heading">Services</h3>
 
-        <ul class="dk-footer-list">
+<!-- BRAND -->
 
-          <li>
-            <a href="logo-design.html">
-              Logo Design & Branding
-            </a>
-          </li>
+<div class="dk-footer-brand">
 
-          <li>
-            <a href="social-media-design.html">
-              Social Media Design
-            </a>
-          </li>
+<a
+href="index.html"
+class="dk-footer-logo"
+>
 
-          <li>
-            <a href="digital-marketing.html">
-              Digital Marketing
-            </a>
-          </li>
+<img
+src="assets/logo.png"
+alt="DesignKaro Studio - Graphic Design and Digital Marketing"
+>
 
-          <li>
-            <a href="seo-services.html">
-              SEO Services
-            </a>
-          </li>
+</a>
 
-          <li>
-            <a href="web-development.html">
-              Web Development
-            </a>
-          </li>
 
-          <li>
-            <a href="#services">
-              Google Business Profile
-            </a>
-          </li>
+<p class="dk-footer-description">
 
-        </ul>
+DesignKaro Studio is a creative design and digital marketing studio
+helping businesses build stronger brands through graphic design,
+branding, social media, SEO, digital marketing and web development.
 
-      </div>
+</p>
 
 
-      <!-- CONTACT -->
-      <div>
+<div class="dk-footer-tagline">
 
-        <h3 class="dk-footer-heading">Let's Talk</h3>
+Design seedha, brand teekha.
 
-        <div class="dk-footer-contact-item">
+</div>
 
-          <div class="dk-footer-contact-icon">WA</div>
 
-          <div class="dk-footer-contact-content">
+<div class="dk-footer-social">
 
-            <span class="dk-footer-contact-label">
-              WhatsApp
-            </span>
 
-            <a
-              href="https://wa.me/918376852307"
-              target="_blank"
-              rel="noopener"
-            >
-              +91 83768 52307
-            </a>
+<a
+href="https://www.instagram.com/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="DesignKaro Studio on Instagram"
+>
+IG
+</a>
 
-          </div>
 
-        </div>
+<a
+href="https://www.linkedin.com/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="DesignKaro Studio on LinkedIn"
+>
+IN
+</a>
 
 
-        <div class="dk-footer-contact-item">
+<a
+href="https://www.facebook.com/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="DesignKaro Studio on Facebook"
+>
+FB
+</a>
 
-          <div class="dk-footer-contact-icon">@</div>
 
-          <div class="dk-footer-contact-content">
+<a
+href="https://wa.me/918376852307"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Contact DesignKaro Studio on WhatsApp"
+>
+WA
+</a>
 
-            <span class="dk-footer-contact-label">
-              Email
-            </span>
 
-            <a href="mailto:digitalcreator1803@gmail.com">
-              digitalcreator1803@gmail.com
-            </a>
+</div>
 
-          </div>
+</div>
 
-        </div>
 
+<!-- EXPLORE -->
 
-        <div class="dk-footer-contact-item">
+<div>
 
-          <div class="dk-footer-contact-icon">IN</div>
+<h3 class="dk-footer-heading">
+Explore
+</h3>
 
-          <div class="dk-footer-contact-content">
 
-            <span class="dk-footer-contact-label">
-              Service Area
-            </span>
+<ul class="dk-footer-list">
 
-            <span>
-              Serving businesses across India
-            </span>
 
-          </div>
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
 
-        </div>
 
-      </div>
+<li>
+<a href="#about">
+About DesignKaro
+</a>
+</li>
 
-    </div>
 
+<li>
+<a href="#services">
+Our Services
+</a>
+</li>
 
-    <!-- BOTTOM -->
-    <div class="dk-footer-bottom">
 
-      <div class="dk-footer-bottom-inner">
+<li>
+<a href="#process">
+Our Process
+</a>
+</li>
 
-        <div class="dk-footer-copy">
-          © 2024 DesignKaro Studio. All rights reserved.
-        </div>
 
-        <div class="dk-footer-legal">
+<li>
+<a href="#faq">
+FAQs
+</a>
+</li>
 
-          <a href="terms-and-conditions.html">
-            Terms & Conditions
-          </a>
 
-          <!-- Add these only after creating the pages -->
-          <!--
-          <a href="privacy-policy.html">
-            Privacy Policy
-          </a>
+<li>
+<a href="#contact">
+Contact Us
+</a>
+</li>
 
-          <a href="refund-policy.html">
-            Refund Policy
-          </a>
-          -->
 
-        </div>
+</ul>
 
-      </div>
+</div>
 
-    </div>
 
-  </div>
+<!-- SERVICES -->
+
+<div>
+
+<h3 class="dk-footer-heading">
+Services
+</h3>
+
+
+<ul class="dk-footer-list">
+
+
+<li>
+<a href="logo-design.html">
+Logo Design & Branding
+</a>
+</li>
+
+
+<li>
+<a href="social-media-design.html">
+Social Media Design
+</a>
+</li>
+
+
+<li>
+<a href="digital-marketing.html">
+Digital Marketing
+</a>
+</li>
+
+
+<li>
+<a href="seo-services.html">
+SEO Services
+</a>
+</li>
+
+
+<li>
+<a href="web-development.html">
+Web Development
+</a>
+</li>
+
+
+<li>
+<a href="#services">
+Google Business Profile
+</a>
+</li>
+
+
+</ul>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div>
+
+<h3 class="dk-footer-heading">
+Let's Talk
+</h3>
+
+
+<div class="dk-footer-contact-item">
+
+<div class="dk-footer-contact-icon">
+WA
+</div>
+
+
+<div class="dk-footer-contact-content">
+
+<span class="dk-footer-contact-label">
+WhatsApp
+</span>
+
+
+<a
+href="https://wa.me/918376852307"
+target="_blank"
+rel="noopener noreferrer"
+>
+
++91 83768 52307
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="dk-footer-contact-item">
+
+<div class="dk-footer-contact-icon">
+@
+</div>
+
+
+<div class="dk-footer-contact-content">
+
+<span class="dk-footer-contact-label">
+Email
+</span>
+
+
+<a
+href="mailto:digitalcreator1803@gmail.com"
+>
+
+digitalcreator1803@gmail.com
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="dk-footer-contact-item">
+
+<div class="dk-footer-contact-icon">
+IN
+</div>
+
+
+<div class="dk-footer-contact-content">
+
+<span class="dk-footer-contact-label">
+Service Area
+</span>
+
+
+<span>
+Serving businesses across India
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER BOTTOM -->
+
+<div class="dk-footer-bottom">
+
+<div class="dk-footer-bottom-inner">
+
+
+<div class="dk-footer-copy">
+
+© 2026 DesignKaro Studio. All rights reserved.
+
+</div>
+
+
+<div class="dk-footer-legal">
+
+<a href="terms-and-conditions.html">
+Terms & Conditions
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
 
 </footer>
+
 
 <!-- ================= FLOATING WHATSAPP ================= -->
 
@@ -2481,12 +2832,15 @@ href="https://wa.me/918376852307"
 target="_blank"
 rel="noopener noreferrer"
 class="whatsapp"
-aria-label="Contact DesignKaro Studio on WhatsApp">
+aria-label="Contact DesignKaro Studio on WhatsApp"
+>
 
 WhatsApp ↗
 
 </a>
 
+
+<!-- ================= MENU SCRIPT ================= -->
 
 <script>
 
@@ -2501,15 +2855,25 @@ links.style.display = "none";
 }else{
 
 links.style.display = "flex";
+
 links.style.position = "absolute";
+
 links.style.top = "72px";
+
 links.style.left = "4%";
+
 links.style.right = "4%";
+
 links.style.padding = "18px";
+
 links.style.background = "#fff";
+
 links.style.border = "1px solid #e8e3dd";
+
 links.style.borderRadius = "16px";
+
 links.style.flexDirection = "column";
+
 links.style.alignItems = "stretch";
 
 }
@@ -2518,71 +2882,131 @@ links.style.alignItems = "stretch";
 
 </script>
 
+
 <!-- ================= COUNTER ANIMATION ================= -->
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
 
-  const counters = document.querySelectorAll(".counter");
-  let started = false;
+document.addEventListener(
+"DOMContentLoaded",
+function(){
 
-  function startCounters() {
+const counters =
+document.querySelectorAll(".counter");
 
-    if (started) return;
-    started = true;
+let started = false;
 
-    counters.forEach(counter => {
 
-      const target = Number(counter.dataset.target);
-      const duration = 1600;
-      const startTime = performance.now();
+function startCounters(){
 
-      function updateCounter(currentTime) {
+if(started) return;
 
-        const progress = Math.min(
-          (currentTime - startTime) / duration,
-          1
-        );
+started = true;
 
-        const easeOut = 1 - Math.pow(1 - progress, 3);
 
-        counter.textContent = Math.floor(target * easeOut);
+counters.forEach(
+counter => {
 
-        if (progress < 1) {
-          requestAnimationFrame(updateCounter);
-        } else {
-          counter.textContent = target;
-        }
-      }
+const target =
+Number(counter.dataset.target);
 
-      requestAnimationFrame(updateCounter);
+const duration = 1600;
 
-    });
-  }
+const startTime =
+performance.now();
 
-  const statsSection = document.querySelector(".dk-stats");
 
-  if (statsSection) {
+function updateCounter(currentTime){
 
-    const observer = new IntersectionObserver(
-      function (entries) {
+const progress =
+Math.min(
+(currentTime - startTime) / duration,
+1
+);
 
-        if (entries[0].isIntersecting) {
-          startCounters();
-          observer.disconnect();
-        }
 
-      },
-      {
-        threshold: 0.3
-      }
-    );
+const easeOut =
+1 - Math.pow(
+1 - progress,
+3
+);
 
-    observer.observe(statsSection);
-  }
 
-});
+counter.textContent =
+Math.floor(
+target * easeOut
+);
+
+
+if(progress < 1){
+
+requestAnimationFrame(
+updateCounter
+);
+
+}else{
+
+counter.textContent =
+target;
+
+}
+
+}
+
+
+requestAnimationFrame(
+updateCounter
+);
+
+}
+
+);
+
+}
+
+
+const statsSection =
+document.querySelector(".dk-stats");
+
+
+if(statsSection){
+
+const observer =
+new IntersectionObserver(
+
+function(entries){
+
+if(
+entries[0].isIntersecting
+){
+
+startCounters();
+
+observer.disconnect();
+
+}
+
+},
+
+{
+threshold:0.3
+}
+
+);
+
+
+observer.observe(
+statsSection
+);
+
+}
+
+}
+);
+
 </script>
 
+
 </body>
+
 </html>
