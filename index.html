@@ -8,7 +8,7 @@
   "name": "DesignKaro Studio",
   "url": "https://designkarostudio.github.io/designkaro/",
   "logo": "https://designkarostudio.github.io/designkaro/assets/logo.png",
-  "email": "designkarostudio@gmail.com",
+  "email": "digitalcreator1803@gmail.com",
   "telephone": "+91-8376852307",
   "address": {
     "@type": "PostalAddress",
@@ -1433,20 +1433,7 @@ One place for your digital brand.
 </div>
 
 </section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section
-<!-- HERO SECTION -->
-<section class="hero">
-
-   <!-- tumhara existing hero ka pura code -->
-
-</section>
-
-
-<!-- 👇 COUNTER YAHAN SE START HOGA -->
+<!-- ================= STATS ================= -->
 
 <section class="dk-stats" aria-label="DesignKaro Studio achievements">
 
@@ -1479,7 +1466,7 @@ One place for your digital brand.
         <span class="dk-stat-number">
           <span class="counter" data-target="3">0</span><span class="plus">+</span>
         </span>
-        <span class="dk-stat-label">Years of Experience</span>
+        <span class="dk-stat-label">Years Experience</span>
       </div>
 
     </div>
@@ -1488,17 +1475,8 @@ One place for your digital brand.
 
 </section>
 
-<!-- 👆 COUNTER YAHAN KHATAM -->
 
-
-
-<section id="about">
-
-   <!-- tumhara existing About code -->
-
-</section>
-class="about"
-id="about">
+<section class="about" id="about">
 
 <div class="container">
 
@@ -2540,6 +2518,71 @@ links.style.alignItems = "stretch";
 
 </script>
 
+<!-- ================= COUNTER ANIMATION ================= -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const counters = document.querySelectorAll(".counter");
+  let started = false;
+
+  function startCounters() {
+
+    if (started) return;
+    started = true;
+
+    counters.forEach(counter => {
+
+      const target = Number(counter.dataset.target);
+      const duration = 1600;
+      const startTime = performance.now();
+
+      function updateCounter(currentTime) {
+
+        const progress = Math.min(
+          (currentTime - startTime) / duration,
+          1
+        );
+
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+
+        counter.textContent = Math.floor(target * easeOut);
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target;
+        }
+      }
+
+      requestAnimationFrame(updateCounter);
+
+    });
+  }
+
+  const statsSection = document.querySelector(".dk-stats");
+
+  if (statsSection) {
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+
+        if (entries[0].isIntersecting) {
+          startCounters();
+          observer.disconnect();
+        }
+
+      },
+      {
+        threshold: 0.3
+      }
+    );
+
+    observer.observe(statsSection);
+  }
+
+});
+</script>
 
 </body>
 </html>
